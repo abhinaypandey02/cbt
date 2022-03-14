@@ -1,0 +1,10 @@
+.companies{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 40px;
+  .gatsby-image-wrapper{
+    margin: 0 35px;
+    width: 20%;
+  }
+}
