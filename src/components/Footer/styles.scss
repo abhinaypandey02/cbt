@@ -1,0 +1,111 @@
+
+.footer{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  .top{
+    padding: 130px 80px 130px;
+    display: flex;
+    justify-content: space-between;
+    .image{
+      margin-bottom: 25px;
+    }
+    .text{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      max-width: 302px;
+      color: #545454;
+    }
+    .certification,.community{
+      .heading{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: #545454;
+
+        margin-bottom: 15px;
+      }
+      .elements{
+        .element{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 200%;
+
+          /* or 28px */
+
+          color: #545454;
+
+
+        }
+      }
+    }
+    .contactSocial{
+      .contact{
+        .heading{
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 15px;
+
+          color: #545454;
+        }
+        .email,.phone{
+          display: flex;
+          align-items: center;
+          margin: 17px 0;
+          .logo{
+            margin-right: 11px;
+          }
+          .text{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+
+            /* identical to box height */
+
+            color: #0A9E62;
+
+
+          }
+        }
+      }
+      .social{
+        .heading{
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 20px;
+
+          color: #545454;
+        }
+        .icons{
+          display: flex;
+          .icon{
+            margin: 0 15px;
+          }
+          .icon:nth-child(1){
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .bottom{
+    display: flex;
+    justify-content: center;
+    .text{
+      text-align: center;
+      width: 257px;
+      border-bottom: 10px solid #C4C4C4;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 6px;
+      color: #D3D3D3;
+
+
+    }
+  }
+
+}
