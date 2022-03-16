@@ -4,8 +4,10 @@ import PageHeader from "../components/PageHeader";
 import Layout from "../components/Layout";
 import Navigator from "../components/Navigator";
 import Blogs from "../components/Blogs";
-import AboutCBT from "../components/AboutUs/aboutCBT";
-import WhyUsAbout from "../components/AboutUs/whyUs";
+import AboutCBT from "../components/AboutUs/AboutCBT";
+import WhyUsAbout from "../components/AboutUs/WhyUs";
+import OurStrength from "../components/AboutUs/OurStrength";
+import GetInTouch from "../components/GetInTouch";
 
 export default function AboutUs({location}:any) {
     return  <Layout location={location}>
@@ -15,7 +17,8 @@ export default function AboutUs({location}:any) {
 
             <AboutCBT/>
             <WhyUsAbout/>
-
+            <OurStrength/>
+            <GetInTouch/>
             <Blogs/>
         </div>
     </Layout>
