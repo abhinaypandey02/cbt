@@ -1,0 +1,25 @@
+.navigator{
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 80px;
+  display: flex;
+  .navigator-container{
+    display: flex;
+    align-items: center;
+    .firstPath{
+      font-weight: 400;
+      color: #292929;
+      text-decoration: none;
+    }
+    .navigator-arrow{
+      margin: 0 10px;
+    }
+  }
+
+  .lastPath{
+    font-weight: 700;
+    color: #292929;
+    text-decoration: none;
+  }
+
+}
