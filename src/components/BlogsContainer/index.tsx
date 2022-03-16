@@ -29,7 +29,7 @@ const BLOGS=[
         slug:"blogg"
     }
 ]
-export default function Blogs(){
+export default function BlogsContainer(){
     return <div className="blogs">
         <div className="heading">Read Our Latest News</div>
         <div className="elements">
