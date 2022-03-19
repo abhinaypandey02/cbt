@@ -1,16 +1,16 @@
 import React from 'react';
 import './styles.scss';
 
-export default function Form(){
+export default function Form({mini}:{mini:boolean}){
     return <form className="form">
         <div className="input-containers">
             <input className="base" placeholder="Your name"/>
             <input className="base" placeholder="Your email"/>
         </div>
-        <div className="input-containers">
+        {!mini&&<div className="input-containers">
 
             <input className="base" placeholder="Subject"/>
-        </div>
+        </div>}
         <div className="input-containers">
 
             <input className="base" placeholder="Phone Number"/>

@@ -12,7 +12,7 @@ import GetInTouch from "../components/GetInTouch";
 export default function AboutUs({location}:any) {
     return  <Layout location={location}>
         <div className="about-us">
-            <PageHeader heading={"About Us"}/>
+            <PageHeader heading={"AboutRackRental Us"}/>
             <Navigator pathIDs={['home','aboutUs']}/>
 
             <AboutCBT/>

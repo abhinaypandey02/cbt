@@ -1,0 +1,204 @@
+.pricing {
+  padding: 0 50px;
+  .heading {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #0A9E62;
+
+
+  }
+
+  .sub-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #0A9E62;
+    margin-bottom: 65px;
+  }
+
+  .plans {
+    display: flex;
+    justify-content: space-between;
+    height: 519.93px;
+    align-items: center;
+    .plan {
+      width: 215px;
+      height: 488px;
+      padding: 26px 30px;
+      text-align: center;
+      background: #FFFFFF;
+      border: 1px solid #E9E9E9;
+      box-sizing: border-box;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: 0.2s;
+      cursor: pointer;
+      .name {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+
+        /* identical to box height */
+        text-align: center;
+
+        color: #545454;
+        margin-bottom: 7px;
+
+      }
+
+      .price {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 90px;
+
+        /* identical to box height */
+
+        color: #0A9E62;
+
+
+      }
+
+      .per-session {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        /* identical to box height */
+        text-align: center;
+
+        color: #0A9E62;
+
+        margin-bottom: 40px;
+      }
+
+      .plan-features {
+        text-align: left;
+        flex-grow: 1;
+        .plan-feature {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          margin: 4px 0;
+          /* identical to box height */
+
+          color: #545454;
+
+          .gatsby-image-wrapper{
+            margin-right: 12px;
+          }
+        }
+
+      }
+      .contact-us{
+        padding: 5px 28px;
+        background: #0A9E62;
+        box-shadow: 0 4px 4px rgba(132, 222, 121, 0.15);
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+
+        /* identical to box height */
+
+        color: #FFFFFF;
+        border: 0;
+      }
+      &:hover{
+        width: 228px;
+        height: 519.93px;
+        padding: 26px 30px;
+
+        background: #0A9E62;
+        border: 1.06542px solid #02834E;
+        box-sizing: border-box;
+        box-shadow: 0 5px 100px rgba(10, 158, 98, 0.18);
+        border-radius: 21.3084px;
+
+        .name {
+          font-weight: 700;
+          font-size: 26.6355px;
+          line-height: 40px;
+          text-align: center;
+
+          color: #FFFFFF;
+          margin-bottom: 7px;
+
+        }
+
+        .price {
+          font-weight: 700;
+          font-size: 63.9252px;
+          line-height: 96px;
+
+          /* identical to box height */
+          text-align: center;
+
+          color: #FFFFFF;
+
+
+        }
+
+        .per-session {
+          font-weight: 400;
+          font-size: 17.0467px;
+          line-height: 26px;
+
+          /* identical to box height */
+          text-align: center;
+
+          color: #FFFFFF;
+
+          margin-bottom: 40px;
+        }
+
+        .plan-features {
+          text-align: left;
+          flex-grow: 1;
+          .plan-feature {
+            font-weight: 400;
+            font-size: 12.785px;
+            line-height: 19px;
+
+            /* identical to box height */
+
+            color: #FFFFFF;
+
+            .gatsby-image-wrapper{
+              margin-right: 12px;
+              img{
+                filter: invert(99%) sepia(0%) saturate(7497%) hue-rotate(248deg) brightness(1002%) contrast(100%);
+              }
+            }
+          }
+
+        }
+        .contact-us{
+          padding: 5px 28px;
+
+          background: #FFFFFF;
+          box-shadow: 0px 4.26168px 4.26168px rgba(255, 255, 255, 0.15);
+          border-radius: 10.6542px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+
+          /* identical to box height */
+
+          color: #0A9E62;
+          border: 0;
+
+        }
+      }
+    }
+  }
+}

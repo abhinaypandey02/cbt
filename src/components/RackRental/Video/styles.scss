@@ -1,0 +1,21 @@
+.video{
+  margin: 99px;
+  .heading{
+    margin-bottom: 59px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #0A9E62;
+  }
+  .video-wrapper{
+    border-radius: 20px;
+    overflow: hidden;
+    video{
+      width: 100%;
+    }
+  }
+}

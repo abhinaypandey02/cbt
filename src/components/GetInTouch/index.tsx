@@ -13,7 +13,7 @@ export default function GetInTouch(){
             <div className="desc">Drop Us a Line and We will Get in Touch with you ASAP</div>
             <div className="form-wrapper">
 
-                <Form/>
+                <Form mini={false}/>
             </div>
         </div>
     </div>
