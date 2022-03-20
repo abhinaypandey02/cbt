@@ -1,0 +1,58 @@
+.types-pmi{
+  margin: 0 105px 99px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .type{
+    width: 500px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 38px 40px 21px 50px;
+    margin: 15px;
+    .heading{
+      display: flex;
+      margin-bottom: 21px;
+      .logo{
+        margin-right: 25px;
+      }
+      .text{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #00395C;
+      }
+    }
+    .desc{
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+
+      color: #A9A9A9;
+
+      flex-grow: 1;
+    }
+    .seeMore{
+      display: flex;
+      justify-content: end;
+      cursor: pointer;
+      .text{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #00395C;
+        margin-right: 7px;
+      }
+      .image{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -8,8 +8,8 @@ import Info from "../components/ContactUs/Info";
 export default function ContactUs({location}:{location:any}){
     return <Layout location={location}>
         <div className="contact-us">
-            <PageHeader heading={"Rack Rental"}/>
-            <Navigator pathIDs={['home','rackRental']}/>
+            <PageHeader heading={"Contact Us"}/>
+            <Navigator pathIDs={['home','contactUs']}/>
             <Info/>
             <GetInTouch/>
             <BlogsContainer/>

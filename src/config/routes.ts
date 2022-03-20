@@ -20,8 +20,13 @@ export default [
         route:"/certification"
     },
     {
-        name:"Contact",
-        id:"contact",
-        route:"/contact"
+        name:"Contact Us",
+        id:"contactUs",
+        route:"/contact-us"
+    },
+    {
+        name:"Project Management Institute (PMI) Certifications",
+        id:"pmi",
+        route:"/pmi"
     }
 ]
