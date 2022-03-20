@@ -1,5 +1,6 @@
 /** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
+  pathPrefix: "/cbt",
   siteMetadata: {
       title: `new`,
     siteUrl: `https://www.yourdomain.tld`
