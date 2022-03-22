@@ -3,7 +3,7 @@ import './styles.scss';
 import {StaticImage} from "gatsby-plugin-image";
 
 export default function Header(){
-    return <div className="header">
+    return <div className="home-header">
         <div className="content">
             <StaticImage className={"ellipse"} src={'../../../images/ellipse.png'} alt={'Ellipse'}/>
 

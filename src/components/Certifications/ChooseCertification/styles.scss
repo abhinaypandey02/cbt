@@ -1,0 +1,21 @@
+.choose-certification{
+  &>.heading{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #0A9E62;
+
+    margin-bottom: 20px;
+  }
+  .certifications-container{
+    margin: 0 20px;
+    .group{
+      margin-bottom: 95px;
+      display: flex;
+    }
+  }
+}

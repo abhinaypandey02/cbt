@@ -1,0 +1,31 @@
+.info-certifications{
+  margin: 120px;
+  display: flex;
+  .content{
+    margin-right: 33px;
+    .heading{
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 45px;
+
+      /* identical to box height */
+
+      color: #0A9E62;
+
+      margin-bottom: 20px;
+    }
+    .desc{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #A9A9A9;
+
+
+    }
+
+  }
+  .image{
+    flex-shrink: 0;
+  }
+}

@@ -15,9 +15,9 @@ export default [
         route:"/rack-rental"
     },
     {
-        name:"Certification",
-        id:"certification",
-        route:"/certification"
+        name:"Certifications",
+        id:"certifications",
+        route:"/certifications"
     },
     {
         name:"Contact Us",
