@@ -4,7 +4,7 @@ import GetInTouch from "../components/GetInTouch";
 import BlogsContainer from "../components/BlogsContainer";
 import PageHeader from "../components/PageHeader";
 import Navigator from "../components/Navigator";
-import InfoCertifications from "../components/Certifications/Info";
+import InfoCertifications from "../components/Certifications/InfoCertifications";
 import ChooseCertification from "../components/Certifications/ChooseCertification";
 
 export default function Certifications({location}:{location:any}){

@@ -1,0 +1,26 @@
+.pmp-info{
+  .heading{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    text-align: center;
+
+    color: #0A9E62;
+    margin-bottom: 20px;
+
+  }
+  .desc{
+    .image{
+      flex-shrink: 0;
+    }
+    .text{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #A9A9A9;
+
+
+    }
+  }
+}

@@ -28,5 +28,10 @@ export default [
         name:"Project Management Institute (PMI) Certifications",
         id:"pmi",
         route:"/pmi"
+    },
+    {
+        name:"Project Management Professional (PMP) Proxy Exam",
+        id:"pms",
+        route:"/pms"
     }
 ]

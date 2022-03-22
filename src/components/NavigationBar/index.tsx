@@ -1,6 +1,7 @@
 import React from "react";
 import {StaticImage} from "gatsby-plugin-image";
 import './styles.scss';
+import {Link} from "gatsby";
 
 const navLinks=[
     {
@@ -20,14 +21,14 @@ const navLinks=[
         route:"/rack-rental"
     },
     {
-        name:"Certification",
-        id:"certification",
-        route:"/certification"
+        name:"Certifications",
+        id:"certifications",
+        route:"/certifications"
     },
     {
         name:"Contact",
-        id:"contact",
-        route:"/contact"
+        id:"contactUs",
+        route:"/contact-us"
     }
 ]
 
@@ -39,9 +40,9 @@ export default function NavigationBar({location}:any){
             <StaticImage src={'../../images/navIcon.png'} alt={"Company logo"}/>
         </div>
         <div className="menu">
-            {navLinks.map(item=><div className={"menuItem "+(location.pathname===item.route?"menuItem--active":"")}>
+            {navLinks.map(item=><Link to={item.route} className={"menuItem "+(location.pathname===item.route?"menuItem--active":"")}>
                 {item.name}
-            </div>)}
+            </Link>)}
         </div>
         <div className="contact">
             <div className="contactItem">

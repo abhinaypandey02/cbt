@@ -21,11 +21,14 @@
     .menuItem{
       margin: 0 18px;
       cursor: pointer;
+      text-decoration: none;
+      color: black;
       &--active{
         color: #0A9E62;
         border-bottom: 2px solid #0A9E62;
       }
     }
+
   }
   .contact{
     display: flex;
