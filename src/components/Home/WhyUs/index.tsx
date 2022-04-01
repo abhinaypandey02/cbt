@@ -38,11 +38,13 @@ export default function WhyUs(){
                     <div className="logo">
                         {element.logo}
                     </div>
+                    <div className="content-wrapper">
                     <div className="heading">
                         {element.heading}
                     </div>
                     <div className="content">
                         {element.content}
+                    </div>
                     </div>
                 </div>)}
             </div>
@@ -51,12 +53,16 @@ export default function WhyUs(){
                 <div className="logo">
                     {element.logo}
                 </div>
-                <div className="heading">
-                    {element.heading}
+                <div className="content-wrapper">
+
+                    <div className="heading">
+                        {element.heading}
+                    </div>
+                    <div className="content">
+                        {element.content}
+                    </div>
                 </div>
-                <div className="content">
-                    {element.content}
-                </div>
+
             </div>)}
         </div>
     </div>

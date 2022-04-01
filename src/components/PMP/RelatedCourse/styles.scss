@@ -1,0 +1,24 @@
+.related-course{
+  padding: 35px 118px 40px;
+  background: #F8F8F8;
+  border-radius: 50px;
+  .heading{
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #0A9E62;
+
+
+  }
+  .elements{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .gatsby-image-wrapper{
+    }
+  }
+}

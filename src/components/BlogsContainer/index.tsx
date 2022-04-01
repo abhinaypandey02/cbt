@@ -33,7 +33,7 @@ export default function BlogsContainer(){
     return <div className="blogs">
         <div className="heading">Read Our Latest News</div>
         <div className="elements">
-            {BLOGS.map(blog=><div className="element">
+            {BLOGS.slice(0,3).map(blog=><div className="element">
                     <div className="image">
                         {blog.compiledFeaturedImage}
                     </div>

@@ -35,8 +35,11 @@ export default function HowItWorks(){
                     {ele.logo}
                     <span className="counter">{index+1}</span>
                 </div>
-                <div className="heading">{ele.heading}</div>
-                <div className="desc">{ele.desc}</div>
+                <div className="content">
+                    <div className="heading">{ele.heading}</div>
+                    <div className="desc">{ele.desc}</div>
+                </div>
+
             </div>)}
         </div>
     </div>

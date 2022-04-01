@@ -12,7 +12,7 @@ export default function PMI({location}:{location:any}){
     return <Layout location={location}>
         <div className="pmi">
             <PageHeader heading={"Project Management Institute (PMI) Certifications"}/>
-            <Navigator pathIDs={['home','certification','pmi']}/>
+            <Navigator pathIDs={['home','certifications','pmi']}/>
             <InfoPMI/>
             <TypesPMI/>
             <GetInTouch/>
