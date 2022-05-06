@@ -1,5 +1,8 @@
 .video{
   margin: 99px;
+  @media (max-width: 991.98px) {
+      margin: 34px 52px;
+  }
   .heading{
     margin-bottom: 59px;
     font-weight: 700;
@@ -10,11 +13,18 @@
     text-align: center;
 
     color: #0A9E62;
+    @media (max-width: 991.98px) {
+      margin-bottom: 23px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
   }
   .video-wrapper{
     border-radius: 20px;
     overflow: hidden;
     video{
+
       width: 100%;
     }
   }

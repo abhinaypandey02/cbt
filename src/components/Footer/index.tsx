@@ -7,7 +7,7 @@ export default function Footer(){
     <div className="top">
         <div className="about">
             <div className="image">
-                <StaticImage src={'../../images/navIcon.png'} alt={"Logo"}/>
+                <StaticImage placeholder="blurred" src={'../../images/navIcon.png'} alt={"Logo"}/>
             </div>
             <div className="text">
                 We are a one-stop solution for all your needs and offer flexible and customized offers to all individuals depending on their educational qualifications and certification they want to achieve.
@@ -17,22 +17,22 @@ export default function Footer(){
             <div className="heading">Certifications</div>
             <div className="elements">
                 <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
+                <div className="element">PMI PMP</div>
+                <div className="element">CISCO CCNA</div>
+                <div className="element">compTIA Security+</div>
+                <div className="element">ISACA CISM</div>
+                <div className="element">CCIE Security v6</div>
             </div>
         </div>
         <div className="community">
             <div className="heading">Community</div>
             <div className="elements">
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
-                <div className="element">AWS SAA-C02</div>
+                <div className="element">Our Certifications</div>
+                <div className="element">Rack Rental</div>
+                <div className="element">Contact Us</div>
+                <div className="element">Privacy Policy</div>
+                <div className="element">Terms & Conditions</div>
+                <div className="element">Refund & Cancelletion</div>
             </div>
         </div>
         <div className="contactSocial">
@@ -40,7 +40,7 @@ export default function Footer(){
                 <div className="heading">Contact</div>
                 <div className="phone">
                     <div className="logo">
-                        <StaticImage src={'../../images/phone.png'} alt={"phone logo"}/>
+                        <StaticImage placeholder="blurred" src={'../../images/phone.png'} alt={"phone logo"}/>
 
                     </div>
                     <div className="text">
@@ -49,7 +49,7 @@ export default function Footer(){
                 </div>
                 <div className="email">
                     <div className="logo">
-                        <StaticImage src={'../../images/email.png'} alt={"email logo"}/>
+                        <StaticImage placeholder="blurred" src={'../../images/email.png'} alt={"email logo"}/>
 
                     </div>
                     <div className="text">
@@ -61,10 +61,10 @@ export default function Footer(){
                 <div className="heading">Social Media:
                 </div>
                 <div className="icons">
-                    <div className="icon"><StaticImage src={'../../images/social/fb.png'} alt={"facebook"}/></div>
-                    <div className="icon"><StaticImage src={'../../images/social/linkedin.png'} alt={"linkedin"}/></div>
-                    <div className="icon"><StaticImage src={'../../images/social/telegram.png'} alt={"telegram"}/></div>
-                    <div className="icon"><StaticImage src={'../../images/social/whatsapp.png'} alt={"whatsapp"}/></div>
+                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/fb.png'} alt={"facebook"}/></div>
+                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/linkedin.png'} alt={"linkedin"}/></div>
+                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/telegram.png'} alt={"telegram"}/></div>
+                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/whatsapp.png'} alt={"whatsapp"}/></div>
                 </div>
             </div>
         </div>

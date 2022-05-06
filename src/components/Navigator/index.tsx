@@ -25,7 +25,7 @@ export default function Navigator({pathIDs}:{pathIDs:string[]}){
                     <Link to={path.route} className="firstPath">
                         {path.name}
                     </Link>
-                    <StaticImage className="navigator-arrow" src={'../../images/navigator-arrow.png'} alt={"navigator arrow"}/>
+                    <StaticImage placeholder="blurred" className="navigator-arrow" src={'../../images/navigator-arrow.png'} alt={"navigator arrow"}/>
                 </span>
             }
         })

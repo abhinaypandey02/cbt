@@ -15,7 +15,7 @@ export default function InfoPMI(){
 
         </div>
         <div className="image">
-            <StaticImage src={'../../../images/pmi/pmi-logo.png'} alt={"PMI Logo"}/>
+            <StaticImage placeholder="blurred" src={'../../../images/pmi/pmi-logo.png'} alt={"PMI Logo"}/>
         </div>
     </div>
 }

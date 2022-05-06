@@ -13,7 +13,7 @@ export default function InfoCertifications(){
             </div>
         </div>
         <div className="image">
-            <StaticImage src={'../../../images/certifications/info.png'} alt={"Certifications Info"}/>
+            <StaticImage placeholder="blurred" src={'../../../images/certifications/info.png'} alt={"Certifications Info"}/>
         </div>
     </div>
 }

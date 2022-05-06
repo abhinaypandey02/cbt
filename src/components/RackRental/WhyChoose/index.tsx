@@ -33,7 +33,7 @@ export default function WhyChoose(){
             {whyChoose.map(e=>
                 <div className="element">
                     <div className="tick-blue">
-                        <StaticImage src={'../../../images/rackRental/tick-blue.png'} alt={"Tick Blue"}/>
+                        <StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-blue.png'} alt={"Tick Blue"}/>
                     </div>
                     <div className="content">
                         <div className="title">

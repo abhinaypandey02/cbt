@@ -12,7 +12,7 @@ export default function Info(){
             <div className="contact-info-container">
                 <div className="contact-info">
                     <div className="logo">
-                        <StaticImage src={'../../../images/email.png'} alt={"email"}/>
+                        <StaticImage placeholder="blurred" src={'../../../images/email.png'} alt={"email"}/>
                     </div>
                     <div className="title">
                         Email:&nbsp;
@@ -23,7 +23,7 @@ export default function Info(){
                 </div>
                 <div className="contact-info">
                     <div className="logo">
-                        <StaticImage src={'../../../images/phone.png'} alt={"phone"}/>
+                        <StaticImage placeholder="blurred" src={'../../../images/phone.png'} alt={"phone"}/>
                     </div>
                     <div className="title">
                         Phone:&nbsp;
@@ -35,7 +35,7 @@ export default function Info(){
             </div>
         </div>
         <div className="image">
-            <StaticImage src={'../../../images/contactUs/info.png'} alt={"Info"}/>
+            <StaticImage placeholder="blurred" src={'../../../images/contactUs/info.png'} alt={"Info"}/>
         </div>
     </div>
 }

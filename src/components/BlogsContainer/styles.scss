@@ -22,8 +22,12 @@
   }
   .elements{
     display: flex;
-    justify-content: space-between;
-    padding: 0 60px;
+    justify-content: space-around;
+    padding: 0 120px;
+    @media (max-width: 1199.98px) {
+      padding: 0 30px;
+
+    }
     @include media-breakpoint-down(md){
       justify-content: center;
       padding: 0 0;

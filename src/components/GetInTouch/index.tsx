@@ -6,7 +6,7 @@ import Form from "../Form";
 export default function GetInTouch(){
     return <div className="getInTouch">
         <div className="image">
-            <StaticImage imgClassName={"innerImg"} className="outerImg" src={"../../images/getInTouch/rocket.png"} alt={"rocket"}/>
+            <StaticImage placeholder="blurred" imgClassName={"innerImg"} className="outerImg" src={"../../images/getInTouch/rocket.png"} alt={"rocket"}/>
         </div>
         <div className="form-container">
             <div className="heading">Get In Touch</div>

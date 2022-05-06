@@ -4,25 +4,25 @@ import {StaticImage} from "gatsby-plugin-image";
 import {Link} from "gatsby";
 const BLOGS=[
     {
-        compiledFeaturedImage:<StaticImage src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
+        compiledFeaturedImage:<StaticImage placeholder="blurred" src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
         title:"Blog Tittle",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan venenatis lectus et bibendum. In vestibulum erat a finibus auctor",
         publishedAt:"May 23, 2020",
         slug:"blogg"
     },{
-        compiledFeaturedImage:<StaticImage src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
+        compiledFeaturedImage:<StaticImage placeholder="blurred" src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
         title:"Blog Tittle",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan venenatis lectus et bibendum. In vestibulum erat a finibus auctor",
         publishedAt:"May 23, 2020",
         slug:"blogg"
     },{
-        compiledFeaturedImage:<StaticImage src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
+        compiledFeaturedImage:<StaticImage placeholder="blurred" src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
         title:"Blog Tittle",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan venenatis lectus et bibendum. In vestibulum erat a finibus auctor",
         publishedAt:"May 23, 2020",
         slug:"blogg"
     },{
-        compiledFeaturedImage:<StaticImage src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
+        compiledFeaturedImage:<StaticImage placeholder="blurred" src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,
         title:"Blog Tittle",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan venenatis lectus et bibendum. In vestibulum erat a finibus auctor",
         publishedAt:"May 23, 2020",

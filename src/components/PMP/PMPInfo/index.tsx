@@ -9,7 +9,10 @@ export default function PMPInfo(){
         </div>
         <div className="desc">
             <div className="image">
-                <StaticImage src={'../../../images/pmp/logo.png'} alt={"pmp logo"}/>
+                <StaticImage placeholder="blurred" src={'../../../images/pmp/logo.png'} alt={"pmp logo"}/>
+            </div>
+            <div className="heading-mob">
+                PMI PMP Online Exam From Home & Pay After You Pass
             </div>
             <div className="text">
                 PMP certification is ranked as one of the most prestigious project management certifications globally. As a PMP certificate holder, you are looked upon as a professional with mastery over the three core areas of project management: predictive, agile, and hybrid. It also shows you possess business skills to achieve goals and enhance your organization’s market value worldwide. You can consider getting this certification if you are an onsite or off-site coordinator, quality assistant manager, PMO office representative, program manager, and manager. It will help you outshine your competitors and give you an unprecedented salary hike.

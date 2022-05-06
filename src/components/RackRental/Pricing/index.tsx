@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles.scss';
 import {StaticImage} from "gatsby-plugin-image";
 
@@ -47,6 +47,7 @@ const PLANS=[
 ]
 
 export default function Pricing(){
+    const [selected,setSelected]=useState(0);
     return <div className="pricing">
         <div className="heading">Pricing Plans</div>
         <div className="sub-heading">The Best, only for you!</div>
@@ -56,14 +57,39 @@ export default function Pricing(){
                 <div className="price">${p.price}</div>
                 <div className="per-session">{p.sessions===1?"Per Session":`For ${p.sessions} Sessions`}</div>
                 <div className="plan-features">
-                    <div className="plan-feature"><StaticImage src={'../../../images/rackRental/tick.png'} alt={"tick"}/> Discount {p.discountPercent}%</div>
-                    <div className="plan-feature"><StaticImage src={'../../../images/rackRental/tick.png'} alt={"tick"}/> {p.hoursPerSession} Hours Per Session</div>
-                    <div className="plan-feature"><StaticImage src={'../../../images/rackRental/tick.png'} alt={"tick"}/> {p.totalRackTime} Total Rack Time</div>
-                    <div className="plan-feature"><StaticImage src={'../../../images/rackRental/tick.png'} alt={"tick"}/> ${p.pricePerHour} Price Per Hour</div>
-                    <div className="plan-feature"><StaticImage src={'../../../images/rackRental/tick.png'} alt={"tick"}/> Dedicated Access</div>
-                    <div className="plan-feature"><StaticImage src={'../../../images/rackRental/tick.png'} alt={"tick"}/> 24*7 Support</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick.png'} alt={"tick"}/> Discount {p.discountPercent}%</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick.png'} alt={"tick"}/> {p.hoursPerSession} Hours Per Session</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick.png'} alt={"tick"}/> {p.totalRackTime} Total Rack Time</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick.png'} alt={"tick"}/> ${p.pricePerHour} Price Per Hour</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick.png'} alt={"tick"}/> Dedicated Access</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick.png'} alt={"tick"}/> 24*7 Support</div>
                 </div>
                 <button className="contact-us">Contact Us</button>
+            </div>)}
+        </div>
+        <div className="plan-mob">
+            <div className="plan">
+                <div className="name">{PLANS[selected].name}</div>
+                <div className="price">${PLANS[selected].price}</div>
+                <div className="per-session">{PLANS[selected].sessions===1?"Per Session":`For ${PLANS[selected].sessions} Sessions`}</div>
+                <div className="plan-features">
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-white.png'} alt={"tick"}/> Discount {PLANS[selected].discountPercent}%</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-white.png'} alt={"tick"}/> {PLANS[selected].hoursPerSession} Hours Per Session</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-white.png'} alt={"tick"}/> {PLANS[selected].totalRackTime} Total Rack Time</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-white.png'} alt={"tick"}/> ${PLANS[selected].pricePerHour} Price Per Hour</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-white.png'} alt={"tick"}/> Dedicated Access</div>
+                    <div className="plan-feature"><StaticImage placeholder="blurred" src={'../../../images/rackRental/tick-white.png'} alt={"tick"}/> 24*7 Support</div>
+                </div>
+                <button className="contact-us">Send</button>
+            </div>
+        </div>
+        <div className="plans-mob">
+            {PLANS.map((p,index)=><div className={"plan "+(selected===index?"active":"")} onClick={()=>{
+                setSelected(index)
+            }}>
+                <div className="name">{p.name}</div>
+                <div className="price">${p.price}</div>
+                <div className="per-session">{p.sessions===1?"Per Session":`For ${p.sessions} Sessions`}</div>
             </div>)}
         </div>
     </div>

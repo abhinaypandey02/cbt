@@ -5,6 +5,6 @@ import {StaticImage} from "gatsby-plugin-image";
 export default function Topology(){
     return <div className="topology">
         <div className="heading">CCIE Security v6 Topology</div>
-        <div className="image"> <StaticImage src={'../../../images/rackRental/topology.png'} alt={"Topology"}/> </div>
+        <div className="image"> <StaticImage placeholder="blurred" src={'../../../images/rackRental/topology.png'} alt={"Topology"}/> </div>
     </div>
 }

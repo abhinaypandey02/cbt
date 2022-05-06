@@ -22,7 +22,7 @@ export default function AboutRackRental(){
         <div className="form-container">
             <div className="heading">
                 <div className="image">
-                    <StaticImage src={'../../../images/rackRental/logo.png'} alt={"Rack Rental Logo"}/>
+                    <StaticImage placeholder="blurred" src={'../../../images/rackRental/logo.png'} alt={"Rack Rental Logo"}/>
                 </div>
                 <div className="text">
                     Drop Us a Line

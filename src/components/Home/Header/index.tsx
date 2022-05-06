@@ -5,7 +5,7 @@ import {StaticImage} from "gatsby-plugin-image";
 export default function Header(){
     return <div className="home-header">
         <div className="content">
-            <StaticImage className={"ellipse"} src={'../../../images/ellipse.png'} alt={'Ellipse'}/>
+            {/*<StaticImage placeholder="blurred" className={"ellipse"} src={'../../../images/ellipse.png'} alt={'Ellipse'}/>*/}
 
             <div className="heading">
                 Passing the Exam is Easier than You Think
@@ -24,7 +24,7 @@ export default function Header(){
                 </div>
                 <div className="secondary">
                     <div className="logo">
-                        <StaticImage src={'../../../images/headerButtonPlay.png'} alt={"Header Button Play"}/>
+                        <StaticImage placeholder="blurred" src={'../../../images/headerButtonPlay.png'} alt={"Header Button Play"}/>
                     </div>
                     <div className="text">
                         Watch Video
@@ -33,7 +33,7 @@ export default function Header(){
             </div>
         </div>
         <div className="image">
-            <StaticImage src={'../../../images/homeHeaderImage.png'} alt={"Header vector"}/>
+            <StaticImage placeholder="blurred" src={'../../../images/homeHeaderImage.png'} alt={"Header vector"}/>
         </div>
     </div>
 }

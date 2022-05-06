@@ -4,13 +4,26 @@
   padding: 66px 140px;
   display: flex;
   margin: 98px 0;
+  @media (max-width: 991.98px) {
+      flex-direction: column;
+    padding: 28px 31px;
+    align-items: center;
+    text-align: center;
+    margin: 34px 10px;
+  }
   .image{
     display: flex;
     justify-content: center;
     width: 50%;
+    @media (max-width: 991.98px) {
+        width: 50%;
+    }
   }
   .content{
     width: 50%;
+    @media (max-width: 991.98px) {
+        width: 100%;
+    }
     .heading{
       font-weight: 700;
       font-size: 30px;
@@ -19,6 +32,10 @@
       /* identical to box height */
 
       color: #0A9E62;
+      @media (max-width: 991.98px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
     .desc{
       font-weight: 500;
@@ -27,11 +44,19 @@
 
       color: #A9A9A9;
       margin: 20px 0;
-
+      @media (max-width: 991.98px) {
+        font-size: 8px;
+        line-height: 12px;
+        margin: 16px 0;
+      }
     }
     .watch-video{
       .gatsby-image-wrapper{
         margin-right: 11px;
+        @media (max-width: 991.98px) {
+            width: 18px;
+          height: 18px;
+        }
       }
 
       border: 2px solid #0A9E62;
@@ -49,6 +74,12 @@
       display: flex;
       justify-content: center;
       background:transparent;
+      @media (max-width: 991.98px) {
+          height: 37px;
+        font-size: 12.0465px;
+        line-height: 18px;
+        padding: 7px 0  ;
+      }
       &:hover{
         background-color: #efefef;
         cursor: pointer;

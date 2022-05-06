@@ -20,7 +20,7 @@ export default function OurStrength(){
         <div className="items-container">
             <div className="items">
                 {STRENGTHS.slice(0,4).map(strength=><div className="item">
-                    <div className="logo"><StaticImage src={'../../../images/aboutUs/tick.png'} alt={"tick"}/></div>
+                    <div className="logo"><StaticImage placeholder="blurred" src={'../../../images/aboutUs/tick.png'} alt={"tick"}/></div>
                     <div className="text">
                         {strength}
                     </div>
@@ -28,7 +28,7 @@ export default function OurStrength(){
             </div>
             <div className="items">
                 {STRENGTHS.slice(4).map(strength=><div className="item">
-                    <div className="logo"><StaticImage src={'../../../images/aboutUs/tick.png'} alt={"tick"}/></div>
+                    <div className="logo"><StaticImage placeholder="blurred" src={'../../../images/aboutUs/tick.png'} alt={"tick"}/></div>
                     <div className="text">
                         {strength}
                     </div>

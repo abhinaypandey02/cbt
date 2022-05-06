@@ -1,6 +1,7 @@
 .form{
   .input-containers{
     display: flex;
+    position: relative;
   }
   .base{
     background: #FFFFFF;
@@ -17,6 +18,18 @@
     padding: 16px 33px;
     width: 100%;
     margin: 10px 8px;
+    &.mobile{
+      padding-left: 105px;
+    }
+    @media (max-width: 991.98px) {
+      border-radius: 9px;
+      font-size: 8px;
+      line-height: 12px;
+      height: 25px;
+      margin: 5px 4px;
+      padding: 6px 14px;
+
+    }
   }
   .submit{
     width: 100%;
@@ -34,5 +47,35 @@
     border-radius: 10px;
     margin: 10px 8px;
     border: 0;
+    @media (max-width: 991.98px) {
+      font-size: 10px;
+      line-height: 15px;
+      height: 26px;
+      border-radius: 4.5px;
+      margin: 10px 4px;
+
+
+    }
+  }
+  #country-codes{
+    text-align: right;
+    width: 87px;
+    margin: 10px 8px;
+    height: calc(100% - 20px);
+    position: absolute;
+    border-radius: 20px;
+    background: white;
+    left: 0;
+    border: 1px solid #DADADA;
+    box-shadow: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 10px;
+
+    /* identical to box height */
+
+    color: #292929;
   }
 }

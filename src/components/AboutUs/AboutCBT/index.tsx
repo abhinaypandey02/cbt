@@ -13,7 +13,7 @@ export default function AboutCBT() {
             </div>
         </div>
         <div className="image">
-            <StaticImage src={'../../../images/aboutUs/aboutCBT.png'} alt={"CBT"}/>
+            <StaticImage placeholder="blurred" src={'../../../images/aboutUs/aboutCBT.png'} alt={"CBT"}/>
         </div>
     </div>
 }

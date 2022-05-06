@@ -8,11 +8,11 @@ export default function RelatedCourse(){
             Related Courses
         </div>
         <div className="elements">
-        <StaticImage src={'../../../images/pmp/relatedCourse/1.png'} alt={"cism"}/>
-        <StaticImage src={'../../../images/pmp/relatedCourse/2.png'} alt={"ccna"}/>
-        <StaticImage src={'../../../images/pmp/relatedCourse/3.png'} alt={"aws"}/>
-        <StaticImage src={'../../../images/pmp/relatedCourse/4.png'} alt={"pmp"}/>
-        <StaticImage src={'../../../images/pmp/relatedCourse/5.png'} alt={"comptia"}/>
+        <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/1.png'} alt={"cism"}/>
+        <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/2.png'} alt={"ccna"}/>
+        <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/3.png'} alt={"aws"}/>
+        <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/4.png'} alt={"pmp"}/>
+        <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/5.png'} alt={"comptia"}/>
         </div>
     </div>
 }

@@ -5,15 +5,15 @@ import {graphql, useStaticQuery} from "gatsby";
 import BackgroundImage from 'gatsby-background-image'
 const ELEMENTS=[
     {
-        image:<StaticImage src={'../../../images/rackRental/1.png'} alt={"Choose The Plan"}/>,
+        image:<StaticImage placeholder="blurred" src={'../../../images/rackRental/1.png'} alt={"Choose The Plan"}/>,
         heading:"Choose The Plan",
         desc:"Select any plan that suits you best. our suggestion is buy solo session and first try it. if you like it buy more."
     },{
-        image:<StaticImage src={'../../../images/rackRental/2.png'} alt={"Tell Us"}/>,
+        image:<StaticImage placeholder="blurred" src={'../../../images/rackRental/2.png'} alt={"Tell Us"}/>,
         heading:"Tell Us",
         desc:"Once you have selected a suitable plan, contact us and we will be happy to  help you proceed ahead."
     },{
-        image:<StaticImage src={'../../../images/rackRental/3.png'} alt={"Enjoy Our Server"}/>,
+        image:<StaticImage placeholder="blurred" src={'../../../images/rackRental/3.png'} alt={"Enjoy Our Server"}/>,
         heading:"Enjoy Our Server",
         desc:"You will receive dedicated and uninterrupted access our racks are hosted in Tier3 Datacenter. and if you face any issue we are just a message away.."
     },
@@ -47,8 +47,11 @@ export default function HowToUse(){
                 {ELEMENTS.map((e,i)=><div className="element">
                     <div className="counter">{i+1}</div>
                     <div className="image">{e.image}</div>
-                    <div className="heading">{e.heading}</div>
-                    <div className="desc">{e.desc}</div>
+                    <div className="content">
+
+                        <div className="heading">{e.heading}</div>
+                        <div className="desc">{e.desc}</div>
+                    </div>
                     </div>)}
             </div>
     </BackgroundImage>

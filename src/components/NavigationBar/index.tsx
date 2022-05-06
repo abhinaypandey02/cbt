@@ -39,7 +39,7 @@ export default function NavigationBar({location}:any){
     return <div className="navbar">
         <Navbar className="navbar-local" bg="white" expand="lg">
             <div className="cont">
-                <Navbar.Brand as={Link} to="/" className={'icon'}><StaticImage src={'../../images/navIcon.png'} alt={"Company logo"}/></Navbar.Brand>
+                <Navbar.Brand as={Link} to="/" className={'icon'}><StaticImage placeholder="blurred" src={'../../images/navIcon.png'} alt={"Company logo"}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="menu-collapse">
                     <Nav className="menu">
@@ -51,7 +51,7 @@ export default function NavigationBar({location}:any){
 
                                 <div className="contactItem">
                                     <div className="logo">
-                                        <StaticImage src={'../../images/phone.png'} alt={"phone logo"}/>
+                                        <StaticImage placeholder="blurred" src={'../../images/phone.png'} alt={"phone logo"}/>
                                     </div>
                                     <div className="text">{PHONE}</div>
                                 </div>
@@ -60,7 +60,7 @@ export default function NavigationBar({location}:any){
 
                             <div className="contactItem">
                                 <div className="logo">
-                                    <StaticImage src={'../../images/email.png'} alt={"email logo"}/>
+                                    <StaticImage placeholder="blurred" src={'../../images/email.png'} alt={"email logo"}/>
                                 </div>
                                 <div className="text">{EMAIL}</div>
                             </div>
