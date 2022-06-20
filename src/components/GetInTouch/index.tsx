@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles.scss';
 import {StaticImage} from "gatsby-plugin-image";
 import Form from "../Form";
+import './styles.scss';
 
 export default function GetInTouch(){
     return <div className="getInTouch">

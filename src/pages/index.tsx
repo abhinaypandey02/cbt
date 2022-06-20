@@ -1,12 +1,12 @@
-import * as React from "react"
-import Layout from "../components/Layout";
-import Header from "../components/Home/Header";
+import BlogsContainer from "../components/BlogsContainer";
 import Companies from "../components/Home/Companies";
 import Features from "../components/Home/Features";
-import WhyUs from "../components/Home/WhyUs";
+import Header from "../components/Home/Header";
 import HowItWorks from "../components/Home/HowItWorks";
+import Layout from "../components/Layout";
+import React from "react"
 import WhoCanDemand from "../components/Home/WhoCanDemand";
-import BlogsContainer from "../components/BlogsContainer";
+import WhyUs from "../components/Home/WhyUs";
 import './styles.scss';
 // markup
 const IndexPage = ({location}: any) => {

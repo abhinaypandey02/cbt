@@ -1,11 +1,12 @@
-import React from 'react';
-import Layout from "../components/Layout";
-import GetInTouch from "../components/GetInTouch";
 import BlogsContainer from "../components/BlogsContainer";
-import PageHeader from "../components/PageHeader";
-import Navigator from "../components/Navigator";
-import InfoCertifications from "../components/Certifications/InfoCertifications";
 import ChooseCertification from "../components/Certifications/ChooseCertification";
+import GetInTouch from "../components/GetInTouch";
+import InfoCertifications from "../components/Certifications/InfoCertifications";
+import Layout from "../components/Layout";
+import Navigator from "../components/Navigator";
+import PageHeader from "../components/PageHeader";
+import React from 'react';
+
 
 export default function Certifications({location}:{location:any}){
     return <Layout location={location}>

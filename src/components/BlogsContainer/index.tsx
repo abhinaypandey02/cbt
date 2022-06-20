@@ -1,7 +1,8 @@
 import React from 'react';
-import './styles.scss';
 import {StaticImage} from "gatsby-plugin-image";
 import {Link} from "gatsby";
+import './styles.scss';
+
 const BLOGS=[
     {
         compiledFeaturedImage:<StaticImage placeholder="blurred" src={'../../images/blogs/1.png'} alt={"Blog Image"}/>,

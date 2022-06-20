@@ -1,7 +1,7 @@
-import React from 'react';
-import './styles.scss';
-import {StaticImage} from "gatsby-plugin-image";
 import Form from "../../Form";
+import React from 'react';
+import {StaticImage} from "gatsby-plugin-image";
+import './styles.scss';
 
 export default function AboutRackRental(){
     return <div className="about-rack-rental">
