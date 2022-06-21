@@ -36,7 +36,7 @@ exports.createPages=async function({graphql,actions}){
     `)
     data.allStrapiCertificationPage.nodes.forEach(node=>{
         actions.createPage({
-            path:node.slug,
+            path:"/certification"+ node.slug,
             component:require.resolve(`./src/components/CertificationPage/index.tsx`),
             context:node
         })
