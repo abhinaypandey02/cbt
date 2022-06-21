@@ -5,7 +5,7 @@ import {RelatedCourseInterface} from "../../../interfaces/CertificationPageInter
 import {Link} from "gatsby";
 
 export default function RelatedCourse({courses}: { courses: RelatedCourseInterface[] }) {
-    const compiledCourses = courses.map(c => ({...c, compiledImage: getImage(c.image.localFile)}));
+    const compiledCourses = courses.map(c => ({...c, compiledImage: getImage(c.image?.localFile)}));
     return <div className="related-course">
         <div className="heading">
             Related Courses
