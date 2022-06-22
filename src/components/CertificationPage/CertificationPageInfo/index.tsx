@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
-export default function CertificationPageInfo({title, description, logo, logoAlt}: { title: string, description: string, logo: any, logoAlt: string }) {
+export default function CertificationPageInfo({title, description1,description2, logo, logoAlt}: { title: string, description1: string,description2: string, logo: any, logoAlt: string }) {
     const compiledImage = getImage(logo.localFile);
     return <div className="pmp-info">
         <div className="heading">
@@ -16,7 +16,10 @@ export default function CertificationPageInfo({title, description, logo, logoAlt
                 {title}
             </div>
             <div className="text">
-                {description}
+                {description1}
+            </div>
+            <div className="text">
+                {description2}
             </div>
 
         </div>

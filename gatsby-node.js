@@ -22,7 +22,8 @@ exports.createPages=async function({graphql,actions}){
               logoAltText
               headerTitle
               aboutTitle
-              description
+              description1
+              description2
               logo {
                 localFile {
                   childImageSharp {
