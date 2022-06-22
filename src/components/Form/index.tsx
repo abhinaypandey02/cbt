@@ -17,7 +17,7 @@ export default function Form({mini,location}: { mini: boolean,location:string })
     });
     function onSubmit(data: any){
         setLoading(true);
-        axios.post('http://34.122.23.239:8080/email',{...data,location}).then(()=>{
+        axios.post('https://34.122.23.239:8080/email',{...data,location}).then(()=>{
             alert("Your response has been sent successfully!")
         }).catch(()=>{
             alert("There was an error submitting the response :(")
