@@ -46,7 +46,7 @@ export default function CertificationPageInfo({title, description1,description2,
                         </div>
                     </div>
                     <div className="form-wrapper">
-                        <Form location={slug} mini={true}/>
+                        <Form location={'/certification/'+slug} mini={true}/>
                     </div>
                 </div>
             </div>
