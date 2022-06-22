@@ -18,7 +18,7 @@ export default function AboutUs({location}:any) {
             <AboutCBT/>
             <WhyUsAbout/>
             <OurStrength/>
-            <GetInTouch/>
+            <GetInTouch location={location}/>
             <BlogsContainer/>
         </div>
     </Layout>

@@ -1,4 +1,10 @@
 .form{
+  .error-component{
+    text-align: left;
+    font-size: 11px;
+    color:red;
+    padding: 5px 16px;
+  }
   .input-containers{
     display: flex;
     position: relative;
@@ -25,7 +31,7 @@
       border-radius: 9px;
       font-size: 8px;
       line-height: 12px;
-      height: 25px;
+      height: 35px;
       margin: 5px 4px;
       padding: 6px 14px;
 
@@ -57,6 +63,10 @@
 
     }
   }
+  .submit:disabled{
+    background: #48a481;
+    cursor: not-allowed;
+  }
   #country-codes{
     text-align: right;
     width: 87px;
@@ -73,7 +83,14 @@
     font-size: 16px;
     line-height: 24px;
     padding-right: 10px;
+    @media (max-width: 991.98px) {
+      font-size: 10px;
+      line-height: 15px;
+      font-weight: 600;
+      width: 67px;
+      padding-right: 10px;
 
+    }
     /* identical to box height */
 
     color: #292929;

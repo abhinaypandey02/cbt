@@ -15,7 +15,7 @@ export default function Certifications({location}:{location:any}){
             <Navigator pathIDs={['home','certifications']}/>
             <InfoCertifications/>
             <ChooseCertification/>
-            <GetInTouch/>
+            <GetInTouch  location={location}/>
             <BlogsContainer/>
         </div>
     </Layout>

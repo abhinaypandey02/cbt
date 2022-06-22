@@ -14,7 +14,7 @@ export default function PMI({location}:{location:any}){
             <Navigator pathIDs={['home','certifications','pmi']}/>
             <InfoPMI/>
             <TypesPMI/>
-            <GetInTouch/>
+            <GetInTouch  location={location}/>
             <BlogsContainer/>
         </div>
     </Layout>

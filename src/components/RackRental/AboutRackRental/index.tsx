@@ -3,7 +3,7 @@ import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import './styles.scss';
 
-export default function AboutRackRental(){
+export default function AboutRackRental({location}:{location:any}){
     return <div className="about-rack-rental">
         <div className="content">
             <div className="heading">
@@ -29,7 +29,7 @@ export default function AboutRackRental(){
                 </div>
             </div>
             <div className="form-wrapper">
-                <Form mini={true}/>
+                <Form location={location.pathname} mini={true}/>
             </div>
         </div>
     </div>

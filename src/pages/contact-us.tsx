@@ -12,7 +12,7 @@ export default function ContactUs({location}:{location:any}){
             <PageHeader heading={"Contact Us"}/>
             <Navigator pathIDs={['home','contactUs']}/>
             <Info/>
-            <GetInTouch/>
+            <GetInTouch  location={location}/>
             <BlogsContainer/>
         </div>
     </Layout>

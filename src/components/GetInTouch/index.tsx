@@ -3,7 +3,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import Form from "../Form";
 import './styles.scss';
 
-export default function GetInTouch(){
+export default function GetInTouch({location}:any){
     return <div className="getInTouch">
         <div className="image">
             <StaticImage placeholder="blurred" imgClassName={"innerImg"} className="outerImg" src={"../../images/getInTouch/rocket.png"} alt={"rocket"}/>
@@ -13,7 +13,7 @@ export default function GetInTouch(){
             <div className="desc">Drop Us a Line and We will Get in Touch with you ASAP</div>
             <div className="form-wrapper">
 
-                <Form mini={false}/>
+                <Form location={location.pathname} mini={false}/>
             </div>
         </div>
     </div>

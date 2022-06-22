@@ -18,7 +18,7 @@ export default function RackRental({location}:any){
         <div className="rack-rental">
             <PageHeader heading={"Rack Rental"}/>
             <Navigator pathIDs={['home','rackRental']}/>
-            <AboutRackRental/>
+            <AboutRackRental location={location}/>
             <HowToUse/>
             <Video/>
             <Pricing/>
