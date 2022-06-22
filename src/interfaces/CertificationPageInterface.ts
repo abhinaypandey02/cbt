@@ -3,7 +3,8 @@ export interface CertificationPageInterface {
     relatedCourses:RelatedCourseInterface[];
     headerTitle:string;
     aboutTitle:string;
-    description:string;
+    description1:string;
+    description2:string;
     slug:string;
     logo:any;
     logoAlt:string;

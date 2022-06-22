@@ -14,7 +14,7 @@ export default function CertificationPage({pageContext}:{pageContext:Certificati
         <div className="pmp">
             <PageHeader heading={pageContext.headerTitle}/>
             <Navigator pathIDs={['home','certifications','pmi','pms']}/>
-            <CertificationPageInfo logo={pageContext.logo} logoAlt={pageContext.logoAlt} title={pageContext.aboutTitle} description={pageContext.description}/>
+            <CertificationPageInfo logo={pageContext.logo} logoAltText={pageContext.logoAlt} title={pageContext.aboutTitle} description1={pageContext.description1} description2={pageContext.description2} slug={pageContext.slug}/>
             {/*<Video/>*/}
             <FAQ faqs={pageContext.faqs}/>
             <RelatedCourse courses={pageContext.relatedCourses}/>
