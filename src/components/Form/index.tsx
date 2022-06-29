@@ -21,8 +21,8 @@ export default function Form({mini,location}: { mini: boolean,location:string })
         show: false,
         header:'23'
     })
-    const {register,handleSubmit, watch, formState:{errors}}=useForm({
-        defaultValues:{countryCode:"",name:"",email:"",subject:"",message:"",phone:""}
+    const {register,handleSubmit, formState:{errors}}=useForm({
+        defaultValues:{countryCode:"+",name:"",email:"",subject:"",message:"",phone:""}
     });
     function onCloseAlert(){
         setAlert({

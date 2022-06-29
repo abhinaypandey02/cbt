@@ -8,6 +8,8 @@ import React from 'react';
 import RelatedCourse from "./RelatedCourse";
 import {CertificationPageInterface} from "../../interfaces/CertificationPageInterface";
 import '../../pages/styles.scss';
+import GetInTouch from "../GetInTouch";
+import Video from "../RackRental/Video";
 
 export default function CertificationPage({pageContext}:{pageContext:CertificationPageInterface}){
     return <Layout location={pageContext.slug}>
@@ -15,9 +17,10 @@ export default function CertificationPage({pageContext}:{pageContext:Certificati
             <PageHeader heading={pageContext.headerTitle}/>
             <Navigator pathIDs={['home','certifications','pmi','pms']}/>
             <CertificationPageInfo logo={pageContext.logo} logoAltText={pageContext.logoAlt} title={pageContext.aboutTitle} description1={pageContext.description1} description2={pageContext.description2} slug={pageContext.slug}/>
-            {/*<Video/>*/}
+            <Video/>
             <FAQ faqs={pageContext.faqs}/>
             <RelatedCourse courses={pageContext.relatedCourses}/>
+            <GetInTouch location={pageContext.slug} />
             <BlogsContainer/>
         </div>
     </Layout>
