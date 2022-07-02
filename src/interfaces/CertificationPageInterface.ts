@@ -8,6 +8,10 @@ export interface CertificationPageInterface {
     slug:string;
     logo:any;
     logoAlt:string;
+    image:string;
+    schema?:string;
+    metaTitle:string;
+    metaDescription:string;
 }
 export interface FAQInterface{
     question:string;

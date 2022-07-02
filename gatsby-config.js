@@ -6,6 +6,7 @@ const strapiConfig = {
         singularName: 'certification-page', queryParams: {
             populate: {
                 logo:'*',
+                image:'*',
                 relatedCourses : {
                     populate:{
                         image:'*'

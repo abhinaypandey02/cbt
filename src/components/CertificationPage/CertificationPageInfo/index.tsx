@@ -3,8 +3,9 @@ import './styles.scss';
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 import Form from "../../Form";
 
-export default function CertificationPageInfo({title, description1,description2, logo, logoAltText,slug}: { title: string, description1: string,description2: string, logo: any, logoAltText: string,slug:string }) {
-    const compiledImage = getImage(logo.localFile);
+export default function CertificationPageInfo({title, description1,description2, logo, image, logoAltText,slug}: { title: string, description1: string,description2: string, logo: any, image: any, logoAltText: string,slug:string }) {
+    const compiledLogo = getImage(logo.localFile);
+    const compiledImage = getImage(image.localFile);
     return <div className="pmp-info">
         <div className="heading">
             {title}
@@ -16,7 +17,7 @@ export default function CertificationPageInfo({title, description1,description2,
             </div>
             <div className={'wrapper'}>
                 <div className="image only-md-down">
-                    {compiledImage && <GatsbyImage image={compiledImage} alt={logoAltText}/>}
+                    {compiledLogo && <GatsbyImage image={compiledLogo} alt={logoAltText}/>}
                 </div>
                 <div className="text">
                     {description1}
@@ -34,7 +35,7 @@ export default function CertificationPageInfo({title, description1,description2,
             </div>
             <div className={'wrapper'}>
                 <div className="image only-md-up">
-                    {compiledImage && <GatsbyImage image={compiledImage} alt={logoAltText}/>}
+                    {compiledLogo && <GatsbyImage image={compiledLogo} alt={logoAltText}/>}
                 </div>
                 <div className="text">
                     {description2}
@@ -52,5 +53,9 @@ export default function CertificationPageInfo({title, description1,description2,
             </div>
 
         </div>
+        <div className="siteImage">
+            {compiledImage && <GatsbyImage image={compiledImage} alt={logoAltText}/>}
+        </div>
+
     </div>
 }
