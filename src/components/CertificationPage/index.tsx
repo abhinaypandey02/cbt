@@ -20,7 +20,7 @@ export default function CertificationPage({pageContext}:{pageContext:Certificati
             <Video/>
             <FAQ faqs={pageContext.faqs}/>
             <RelatedCourse courses={pageContext.relatedCourses}/>
-            <GetInTouch location={pageContext.slug} />
+            <GetInTouch location={{pathname:pageContext.slug}} />
             <BlogsContainer/>
         </div>
     </Layout>
