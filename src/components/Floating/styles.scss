@@ -1,0 +1,38 @@
+.floating{
+  position:fixed;
+  display: flex;
+  align-items: center;
+  bottom: 15px;
+  right: 0;
+  background-color: rgba(196, 207, 253, 0.85);
+  border-radius: 35px 0 0 35px;
+  z-index: 1;
+  padding: 10px 20px;
+  @media (max-width: 991.98px) {
+    padding: 5px 10px;
+
+  }
+  .text{
+    font-weight: bold;
+
+    font-size: 25px;
+    margin: 0 5px;
+    color: #3d3d3d;
+    @media (max-width: 991.98px) { 
+       font-size: 14px;
+    }
+  }
+  a{
+    margin: 0 3px;
+    -webkit-filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.30));
+    filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.30));
+  }
+  .image{
+    height: 60px;
+    width: 60px;
+    @media (max-width: 991.98px) {
+       height: 48px;
+      width: 48px;
+    }
+  }
+}
