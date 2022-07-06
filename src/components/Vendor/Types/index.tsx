@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import {StaticImage} from "gatsby-plugin-image";
+import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
+import {Link} from "gatsby";
 
 const TYPES=[
     {
@@ -26,17 +27,18 @@ const TYPES=[
     },
 ]
 
-export default function TypesPMI(){
+export default function TypesVendor(props:{certifications:{title:string,description:string,logo:any,route:string}[]}){
+    const CERTS=props.certifications.map(c=>({...c,compiledLogo:getImage(c.logo.localFile)}))
     return <div className="types-pmi">
-        {TYPES.map(t=><div className="type">
+        {CERTS.map(t=><div className="type">
             <div className="heading">
-                <div className="logo">{t.logo}</div>
+                <div className="logo">{t.compiledLogo&&<GatsbyImage alt={t.title} image={t.compiledLogo}/>}</div>
                 <div className="text">{t.title}</div>
             </div>
             <div className="desc">
-                {t.desc}
+                {t.description}
             </div>
-            <div className="seeMore">
+            <Link to={t.route} className="seeMore">
 
                 <div className="text">See More</div>
                 <div className={'image'}>
@@ -44,7 +46,7 @@ export default function TypesPMI(){
 
                 </div>
 
-            </div>
+            </Link>
         </div>)}
     </div>
 }

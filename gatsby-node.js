@@ -1,52 +1,89 @@
 exports.createPages=async function({graphql,actions}){
     const {data}=await graphql(`
-        query{
-          allStrapiCertificationPage {
-            nodes {
-              relatedCourses {
-                imageAlt
-                url
-                image {
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData
-                    }
-                  }
-                }
+        query {
+  allStrapiVendor {
+    nodes {
+      metaDescription
+      metaTitle
+      pageDescription
+      slug
+      pageTitle
+      logo {
+        localFile {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+      headerTitle
+      certifications {
+        description
+        title
+        logo {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+        certification_page {
+          aboutTitle
+          description1
+          description2
+          faqs {
+            answer
+            question
+          }
+          headerTitle
+          image {
+            localFile {
+              childImageSharp {
+                gatsbyImageData
               }
-              faqs {
-                answer
-                question
+            }
+          }
+          logo {
+            localFile {
+              childImageSharp {
+                gatsbyImageData
               }
-              slug
-              logoAltText
-              headerTitle
-              aboutTitle
-              description1
-              description2
-              logo {
-                localFile {
-                  childImageSharp {
-                    gatsbyImageData
-                  }
-                }
-              }
-              image {
-                localFile {
-                  childImageSharp {
-                    gatsbyImageData
-                  }
+            }
+          }
+          metaDescription
+          metaTitle
+          logoAltText
+          slug
+          relatedCourses {
+            url
+            imageAlt
+            image {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData
                 }
               }
             }
           }
         }
+      }
+    }
+  }
+}
+
     `)
-    data.allStrapiCertificationPage.nodes.forEach(node=>{
+    data.allStrapiVendor.nodes.forEach(vendor=>{
         actions.createPage({
-            path:"/certification"+ node.slug,
-            component:require.resolve(`./src/components/CertificationPage/index.tsx`),
-            context:node
+            path:"/certification"+ vendor.slug,
+            component:require.resolve(`./src/components/Vendor/index.tsx`),
+            context:vendor
         })
+        vendor.certifications.forEach(cert=>{
+            actions.createPage({
+                path:"/certification"+ vendor.slug+cert.certification_page.slug,
+                component:require.resolve(`./src/components/CertificationPage/index.tsx`),
+                context:{...cert.certification_page, vendorTitle:vendor.headerTitle, vendorRoute:"/certification"+vendor.slug}
+            })
+        })
+
     })
 }

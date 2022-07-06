@@ -3,16 +3,24 @@ import './styles.scss';
 import routes from "../../config/routes";
 import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
+import assert from "assert";
 
-export default function Navigator({pathIDs}:{pathIDs:string[]}){
+export default function Navigator({pathIDs,pathData}:{pathIDs?:string[],pathData?:{name:string;route:string; id:string}[]}){
     const paths:typeof routes=[];
-    pathIDs.forEach(id=>{
+    if(pathIDs&&pathData){
+        console.error("BOTH VALUES SHOULD NOT BE PROVIDED TOGETHER!");
+        return null;
+    }
+    pathIDs?.forEach(id=>{
         const route=routes.find(r=>r.id===id);
         if(route){
             paths.push(route);
         } else {
             console.error("ROUTE NOT FOUND!")
         }
+    })
+    pathData?.forEach(path=>{
+        paths.push(path)
     })
     return <div className="navigator">
         {paths.map((path,index)=>{

@@ -16,7 +16,34 @@ const strapiConfig = {
                 faqs:'*'
             }
         }
-    }],
+    },
+        {
+        singularName: 'vendor', queryParams: {
+            populate: {
+                logo:'*',
+                certifications : {
+                    populate:{
+                        logo:'*',
+                        'certification_page':{
+                            populate: {
+                                logo:'*',
+                                image:'*',
+                                relatedCourses : {
+                                    populate:{
+                                        image:'*'
+                                    }
+
+                                },
+                                faqs:'*'
+                            }
+                        }
+                    }
+
+                },
+            }
+        }
+    }
+    ],
     singleTypes: [],
 };
 module.exports = {

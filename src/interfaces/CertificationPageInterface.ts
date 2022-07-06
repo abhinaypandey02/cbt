@@ -12,6 +12,8 @@ export interface CertificationPageInterface {
     schema?:string;
     metaTitle:string;
     metaDescription:string;
+    vendorRoute:string;
+    vendorTitle:string;
 }
 export interface FAQInterface{
     question:string;

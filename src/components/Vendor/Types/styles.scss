@@ -35,6 +35,7 @@
           margin-bottom: 15px;
       }
       .logo{
+        width:47px;
         margin-right: 25px;
         flex-shrink: 0;
         @media (max-width: 991.98px) {
@@ -71,6 +72,7 @@
       display: flex;
       justify-content: end;
       cursor: pointer;
+      text-decoration: none;
       .text{
         font-weight: 400;
         font-size: 12px;

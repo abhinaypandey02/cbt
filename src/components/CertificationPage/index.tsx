@@ -10,11 +10,29 @@ import {CertificationPageInterface} from "../../interfaces/CertificationPageInte
 import '../../pages/styles.scss';
 import GetInTouch from "../GetInTouch";
 
-export default function CertificationPage({pageContext}:{pageContext:CertificationPageInterface}){
-    return <Layout location={pageContext.slug}>
+export default function CertificationPage({location, pageContext}:{location:any,pageContext:CertificationPageInterface}){
+    return <Layout location={location}>
         <div className="pmp">
             <PageHeader heading={pageContext.headerTitle}/>
-            <Navigator pathIDs={['home','certifications','pmi','pms']}/>
+            <Navigator pathData={[
+                {
+                    name:"Home",
+                    route:"/",
+                    id:"home"
+                },{
+                    name:"Certifications",
+                    route:"/certification",
+                    id:"certification"
+                },{
+                    name:pageContext.vendorTitle,
+                    route:pageContext.vendorRoute,
+                    id:pageContext.vendorTitle
+                },{
+                    name:pageContext.headerTitle,
+                    route:location.pathname,
+                    id:pageContext.headerTitle
+                }
+            ]}/>
             <CertificationPageInfo logo={pageContext.logo} logoAltText={pageContext.logoAlt} title={pageContext.aboutTitle} description1={pageContext.description1} description2={pageContext.description2} slug={pageContext.slug} image={pageContext.image}/>
             <FAQ faqs={pageContext.faqs}/>
             <RelatedCourse courses={pageContext.relatedCourses}/>
