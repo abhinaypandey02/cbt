@@ -42,7 +42,7 @@ export default function Form({mini,location}: { mini: boolean,location:string })
     }
     function onSubmit(data: any){
         setLoading(true);
-        axios.post('https://34.122.23.239:8080/email',{...data,location,cbt:true}).then(()=>{
+        axios.post('https://35.188.90.216:8080/email',{...data,location,cbt:true}).then(()=>{
             openAlert("Query Submitted","Your query has been submitted and you will receive an email from us within 12 hours. please check spam/junk folder as well. to communicate faster chat with us on Whatsapp or telegram now.","success");
         }).catch(()=>{
             openAlert("Error","Your query could not be submitted, please use Whatsapp, Email or Call to reach us","error");
