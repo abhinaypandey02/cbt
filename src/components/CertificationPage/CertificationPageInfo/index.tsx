@@ -7,6 +7,16 @@ export default function CertificationPageInfo({title, description1,description2,
     const compiledLogo = getImage(logo.localFile);
     const compiledImage = getImage(image.localFile);
     return <div className="pmp-info">
+        <div className="form-container only-md-down">
+            <div className="heading">
+                <div className="text">
+                    Drop Us a Line
+                </div>
+            </div>
+            <div className="form-wrapper">
+                <Form location={'/certification'+slug} mini={true}/>
+            </div>
+        </div>
         <div className="heading">
             {title}
         </div>

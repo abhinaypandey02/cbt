@@ -1,5 +1,8 @@
 .comparison{
   margin-bottom: 100px;
+  @media (max-width: 767.98px) {
+     margin-bottom: 20px;
+  }
   h2{
     font-size: 30px;
     font-weight: 700;
@@ -21,9 +24,15 @@
         left:50%;
         top:50%;
         transform: translateX(-50%) translateY(-50%) ;
+        @media (max-width: 767.98px) {
+           display: none;
+        }
       }
       .like{
         margin-left: 25px;
+        @media (max-width: 767.98px) {
+           width: 14px;
+        }
       }
       th{
         width: 585px;
@@ -33,7 +42,13 @@
         font-weight: 700;
         line-height: 45px;
         letter-spacing: 0;
+        @media (max-width: 767.98px) {
+          font-size: 10px;
+          font-weight: 700;
+          line-height: 15px;
+          padding: 9px;
 
+        }
       }
       th:nth-child(1){
         background: #EFEFEF;
@@ -51,12 +66,19 @@
         padding: 20px 40px;
         align-items: start;
         vertical-align: top;
+        @media (max-width: 767.98px) {
+           padding: 6px 12px;
+        }
         .container{
           display: flex;
           align-items: start;
           margin-bottom: auto;
           .logo{
             margin-right: 24px;
+            @media (max-width: 767.98px) {
+              width: 10px;
+              margin-right: 8px;
+            }
           }
           .text{
             .heading{
@@ -65,6 +87,10 @@
               line-height: 18px;
               letter-spacing: 0;
               text-align: left;
+              @media (max-width: 767.98px) {
+                font-size: 7px;
+                line-height: 11px;
+              }
 
             }
             .desc{
@@ -73,6 +99,10 @@
               line-height: 24px;
               letter-spacing: 0;
               text-align: left;
+              @media (max-width: 767.98px) {
+                font-size: 6px;
+                line-height: 9px;
+              }
               b{
                 font-size: 16px;
                 font-weight: 700;
@@ -80,6 +110,10 @@
                 letter-spacing: 0;
                 text-align: left;
                 color:#0A9E62;
+                @media (max-width: 767.98px) {
+                  font-size: 7px;
+                  line-height: 11px;
+                }
               }
             }
           }
