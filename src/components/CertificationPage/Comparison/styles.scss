@@ -1,0 +1,100 @@
+.comparison{
+  margin-bottom: 100px;
+  h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0A9E62;
+    margin-bottom:47px;
+  }
+  table{
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px 20px 0;
+    overflow: hidden;
+    thead{
+      position: relative;
+      .vs{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translateX(-50%) translateY(-50%) ;
+      }
+      .like{
+        margin-left: 25px;
+      }
+      th{
+        width: 585px;
+        padding: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0;
+
+      }
+      th:nth-child(1){
+        background: #EFEFEF;
+      }
+      th:nth-child(2){
+        color:white;
+        background: #878787;
+
+      }
+    }
+    tbody{
+      color: #545454;
+
+      td{
+        padding: 20px 40px;
+        align-items: start;
+        vertical-align: top;
+        .container{
+          display: flex;
+          align-items: start;
+          margin-bottom: auto;
+          .logo{
+            margin-right: 24px;
+          }
+          .text{
+            .heading{
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 18px;
+              letter-spacing: 0;
+              text-align: left;
+
+            }
+            .desc{
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: 0;
+              text-align: left;
+              b{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0;
+                text-align: left;
+                color:#0A9E62;
+              }
+            }
+          }
+        }
+
+      }
+      td:nth-child(2){
+        background: #F5F5F5;
+        .container{
+          .desc{
+            color: #9E9E9E;
+          }
+        }
+
+      }
+    }
+  }
+}

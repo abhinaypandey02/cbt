@@ -16,45 +16,18 @@ export default function CertificationPageInfo({title, description1,description2,
                 {title}
             </div>
             <div className={'wrapper'}>
-                <div className="image only-md-down">
-                    {compiledLogo && <GatsbyImage image={compiledLogo} alt={logoAltText}/>}
-                </div>
+
                 <div className="text">
                     {description1}
-                </div>
-                <div className="form-container only-md-up">
-                    <div className="heading">
-                        <div className="text">
-                            Drop Us a Line
-                        </div>
-                    </div>
-                    <div className="form-wrapper">
-                        <Form location={'/certification'+slug} mini={true}/>
-                    </div>
-                </div>
-            </div>
-            <div className={'wrapper'}>
-                <div className="image only-md-up">
-                    {compiledLogo && <GatsbyImage image={compiledLogo} alt={logoAltText}/>}
-                </div>
-                <div className="text">
+                    <br/>
+                    <br/>
                     {description2}
                 </div>
-                <div className="form-container only-md-down">
-                    <div className="heading">
-                        <div className="text">
-                            Drop Us a Line
-                        </div>
-                    </div>
-                    <div className="form-wrapper">
-                        <Form location={'/certification'+slug} mini={true}/>
-                    </div>
+                <div className="image ">
+                    {compiledLogo && <GatsbyImage image={compiledLogo} alt={logoAltText}/>}
                 </div>
             </div>
 
-        </div>
-        <div className="siteImage">
-            {compiledImage && <GatsbyImage image={compiledImage} alt={logoAltText}/>}
         </div>
 
     </div>
