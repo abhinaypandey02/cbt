@@ -6,7 +6,7 @@ import Form from "../Form";
 export default function PageHeader({heading, location, miniForm}:{heading:string, location:string, miniForm?:boolean}){
     return <div className="page-header">
         {/*<StaticImage placeholder="blurred" className="ellipse" src={'../../images/ellipse.png'} alt={'ellipse'}/>*/}
-        {heading}
+        {heading} Online From Home & Pay After You Pass
         {miniForm&&<div className="form-container">
             <div className="heading">
                 <div className="text">

@@ -4,8 +4,8 @@ import {StaticImage} from "gatsby-plugin-image";
 
 const HOW_IT_WORKS=[
     {
-        logo: <StaticImage placeholder="blurred" src={'../../../images/howItWorks/1.png'} alt={"Select Your Desired Certification"}/>,
-        heading: "Select Your Desired Certification",
+        logo: <StaticImage placeholder="blurred" src={'../../../images/howItWorks/1.png'} alt={"Select Your Certification"}/>,
+        heading: "Select Your Certification",
         desc:"Select the certification you want to apply for from a vast list of certificates."
     },{
         logo: <StaticImage placeholder="blurred" src={'../../../images/howItWorks/2.png'} alt={"Connect with us"}/>,

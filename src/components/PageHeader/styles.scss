@@ -17,6 +17,9 @@
   text-align: center;
   z-index: 0;
   color: #FFFFFF;
+  @media (max-width: 1199.98px) {
+     padding: 20px 30px;
+  }
   @media (max-width: 991.98px) {
     border-radius: 20px;
     font-size: 25px;
@@ -32,16 +35,13 @@
      padding: 46px 36px;
   }
   .form-container{
-    width: 540px;
+    width: 35%;
     flex-shrink: 0;
     border-radius: 30px;
     border: 0.5px white solid;
 
     padding: 10px 30px;
     margin-left: 54px;
-    @media (max-width: 1199.98px) {
-       width: 50%;
-    }
     @media (max-width: 991.98px) {
       width: 100%;
       border-radius: 20px;
