@@ -78,6 +78,7 @@ export default function Form({mini,location}: { mini: boolean,location:string })
         <div className="input-containers">
 
             <input type={'number'} {...register('phone',{required:true})} className="base mobile" placeholder="Phone Number"/>
+            <label htmlFor={'country-codes'} className={'sr-only'}>Country Code</label>
             <input list={'country-list'} {...register('countryCode',{required:true,validate:{
                     validCode:v=>codes.find(ele=>ele.MobileCode===v)!==undefined
                 }})} id="country-codes"/>
