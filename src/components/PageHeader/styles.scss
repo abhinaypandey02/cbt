@@ -4,17 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 476px;
   background: linear-gradient(245.16deg, #00395C 8.93%, #01121D 87.45%);
   box-shadow: 0 4px 30px rgba(0, 35, 56, 0.15);
   border-radius: 50px;
   margin-bottom: 50px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 75px;
-  text-align: center;
+  min-height: 476px;
+
   z-index: 0;
   color: #FFFFFF;
   @media (max-width: 1199.98px) {
@@ -34,8 +29,18 @@
   @media (max-width: 767.98px) {
      padding: 46px 36px;
   }
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+
+
+  }
   .form-container{
-    width: 35%;
+    width: 420px;
     flex-shrink: 0;
     border-radius: 30px;
     border: 0.5px white solid;

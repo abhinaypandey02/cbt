@@ -36,7 +36,7 @@ export default function CertificationPage({location, pageContext}:{location:any,
                     id:pageContext.headerTitle
                 }
             ]}/>
-            <CertificationPageInfo logo={pageContext.logo} logoAltText={pageContext.logoAlt} title={pageContext.aboutTitle} description1={pageContext.description1} description2={pageContext.description2} slug={pageContext.slug} image={pageContext.image}/>
+            <CertificationPageInfo logo={pageContext.logo} logoAltText={pageContext.logoAlt} description1={pageContext.description1} description2={pageContext.description2} slug={pageContext.slug}/>
             <HowItWorks/>
 
             <FAQ faqs={pageContext.faqs}/>

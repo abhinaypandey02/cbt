@@ -73,15 +73,15 @@ exports.createPages=async function({graphql,actions}){
     `)
     data.allStrapiVendor.nodes.forEach(vendor=>{
         actions.createPage({
-            path:"/certification"+ vendor.slug,
+            path:"/certifications"+ vendor.slug,
             component:require.resolve(`./src/components/Vendor/index.tsx`),
             context:vendor
         })
         vendor.certifications.forEach(cert=>{
             actions.createPage({
-                path:"/certification"+ vendor.slug+cert.certification_page.slug,
+                path:"/certifications"+ vendor.slug+cert.certification_page.slug,
                 component:require.resolve(`./src/components/CertificationPage/index.tsx`),
-                context:{...cert.certification_page, vendorTitle:vendor.headerTitle, vendorRoute:"/certification"+vendor.slug}
+                context:{...cert.certification_page, vendorTitle:vendor.headerTitle, vendorRoute:"/certifications"+vendor.slug}
             })
         })
 
