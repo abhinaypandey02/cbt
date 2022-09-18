@@ -27,7 +27,6 @@ exports.createPages=async function({graphql,actions}){
           }
         }
         certification_page {
-          aboutTitle
           description1
           description2
           faqs {
@@ -35,13 +34,6 @@ exports.createPages=async function({graphql,actions}){
             question
           }
           headerTitle
-          image {
-            localFile {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
           logo {
             localFile {
               childImageSharp {
