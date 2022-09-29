@@ -1,6 +1,6 @@
 export interface CertificationPageInterface {
     faqs:FAQInterface[];
-    relatedCourses:RelatedCourseInterface[];
+    related_courses:RelatedCourseInterface[];
     headerTitle:string;
     description1:string;
     description2:string;
@@ -18,7 +18,7 @@ export interface FAQInterface{
     answer:string;
 }
 export interface RelatedCourseInterface{
-    image:any;
-    url:string;
-    imageAlt:string;
+    logo:any;
+    slug:string;
+    metaTitle:string;
 }

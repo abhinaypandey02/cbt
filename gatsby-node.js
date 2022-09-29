@@ -45,10 +45,10 @@ exports.createPages=async function({graphql,actions}){
           metaTitle
           logoAltText
           slug
-          relatedCourses {
-            url
-            imageAlt
-            image {
+          related_courses {
+            slug
+            metaTitle
+            logo {
               localFile {
                 childImageSharp {
                   gatsbyImageData
