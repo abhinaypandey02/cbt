@@ -7,10 +7,10 @@ export default function Floating() {
         <div className={'text'}>
             Chat with us:
         </div>
-        <a target={'_blank'} href={'https://wa.me/13474801260'}>
+        <a target={'_blank'} href={'https://wa.me/14158306004'}>
             <StaticImage className={'image'} placeholder={'blurred'} alt={'whatsapp'}  src="../../images/whatsapp.png"/>
         </a>
-        <a target={'_blank'} href={'https://t.me/examremote'}>
+        <a target={'_blank'} href={'https://t.me/cbtproxy'}>
             <StaticImage className={'image'} placeholder={'blurred'} alt={'telegram'}  src="../../images/telegram.png"/>
 
         </a>

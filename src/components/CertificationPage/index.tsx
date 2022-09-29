@@ -16,7 +16,7 @@ import Comparison from "./Comparison";
 export default function CertificationPage({location, pageContext}:{location:any,pageContext:CertificationPageInterface}){
     return <Layout location={location}>
         <div className="pmp">
-            <PageHeader miniForm={true} location={'/certification'+pageContext.slug} heading={pageContext.headerTitle}/>
+            <PageHeader miniForm={true} location={'/certification'+pageContext.slug} heading={pageContext.headerTitle+" Online From Home & Pay After You Pass"}/>
             <Navigator pathData={[
                 {
                     name:"Home",
