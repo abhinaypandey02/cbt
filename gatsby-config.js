@@ -21,25 +21,19 @@ const strapiConfig = {
         singularName: 'vendor', queryParams: {
             populate: {
                 logo:'*',
-                certifications : {
-                    populate:{
+                'certification_pages':{
+                    populate: {
                         logo:'*',
-                        'certification_page':{
-                            populate: {
-                                logo:'*',
-                                image:'*',
-                                related_courses : {
-                                    populate:{
-                                        logo:'*'
-                                    }
-
-                                },
-                                faqs:'*'
+                        image:'*',
+                        related_courses : {
+                            populate:{
+                                logo:'*'
                             }
-                        }
-                    }
 
-                },
+                        },
+                        faqs:'*'
+                    }
+                }
             }
         }
     }

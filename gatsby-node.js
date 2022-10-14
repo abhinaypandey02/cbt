@@ -16,17 +16,7 @@ exports.createPages=async function({graphql,actions}){
         }
       }
       headerTitle
-      certifications {
-        description
-        title
-        logo {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-        }
-        certification_page {
+      certification_pages {
           description1
           description2
           faqs {
@@ -57,7 +47,6 @@ exports.createPages=async function({graphql,actions}){
             }
           }
         }
-      }
     }
   }
 }
@@ -69,11 +58,11 @@ exports.createPages=async function({graphql,actions}){
             component:require.resolve(`./src/components/Vendor/index.tsx`),
             context:vendor
         })
-        vendor.certifications.forEach(cert=>{
+        vendor.certification_pages.forEach(cert=>{
             actions.createPage({
-                path:"/certifications"+ vendor.slug+cert.certification_page.slug,
+                path:"/certifications"+ vendor.slug+cert.slug,
                 component:require.resolve(`./src/components/CertificationPage/index.tsx`),
-                context:{...cert.certification_page, vendorTitle:vendor.headerTitle, vendorRoute:"/certifications"+vendor.slug}
+                context:{...cert, vendorTitle:vendor.headerTitle, vendorRoute:"/certifications"+vendor.slug}
             })
         })
 

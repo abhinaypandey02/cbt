@@ -10,7 +10,7 @@ import '../../pages/styles.scss'
 export default function Index({location,pageContext}:{location:any,pageContext:any}){
     return <Layout location={location}>
         <div className="vendor">
-            <PageHeader heading={pageContext.headerTitle}/>
+            <PageHeader heading={pageContext.headerTitle} location={location}/>
             <Navigator pathData={[
                 {
                     name:"Home",
@@ -27,9 +27,9 @@ export default function Index({location,pageContext}:{location:any,pageContext:a
                 }
             ]}/>
             <InfoVendor logo={pageContext.logo} title={pageContext.pageTitle} description={pageContext.pageDescription}/>
-            <TypesVendor certifications={pageContext.certifications.map((c:any)=>({
+            <TypesVendor certifications={pageContext.certification_pages.map((c:any)=>({
                 ...c,
-                route:location.pathname+c.certification_page.slug
+                route:location.pathname+c.slug
             }))}/>
             <GetInTouch  location={location}/>
             <BlogsContainer/>

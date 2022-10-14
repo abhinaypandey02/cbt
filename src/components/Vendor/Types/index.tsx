@@ -27,25 +27,23 @@ const TYPES=[
     },
 ]
 
-export default function TypesVendor(props:{certifications:{title:string,description:string,logo:any,route:string}[]}){
+export default function TypesVendor(props:{certifications:{metaTitle:string,metaDescription:string,logo:any,route:string}[]}){
     const CERTS=props.certifications.map(c=>({...c,compiledLogo:getImage(c.logo.localFile)}))
     return <div className="types-pmi">
         {CERTS.map(t=><div className="type">
             <div className="heading">
-                <div className="logo">{t.compiledLogo&&<GatsbyImage alt={t.title} image={t.compiledLogo}/>}</div>
-                <div className="text">{t.title}</div>
+                <div className="logo">{t.compiledLogo&&<GatsbyImage alt={t.metaTitle} image={t.compiledLogo}/>}</div>
+                <div className="text">{t.metaTitle}</div>
             </div>
             <div className="desc">
-                {t.description}
+                {t.metaDescription}
             </div>
             <Link to={t.route} className="seeMore">
 
                 <div className="text">See More</div>
                 <div className={'image'}>
                     <StaticImage placeholder="blurred" src="../../../images/arrow.png" alt="read more"/>
-
                 </div>
-
             </Link>
         </div>)}
     </div>
