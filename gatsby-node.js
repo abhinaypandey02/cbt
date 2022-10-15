@@ -1,6 +1,30 @@
 exports.createPages=async function({graphql,actions}){
     const {data}=await graphql(`
         query {
+  allStrapiCbtBlog {
+    nodes {
+      description
+      schema
+      slug
+      content {
+        data {
+          content
+        }
+      }
+      minToRead
+      featuredImage {
+        localFile {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
+          }
+        }
+      }
+      tag
+      title
+      publishedAt(formatString: "MMM DD, YYYY")
+      publishedDate(formatString: "MMM DD, YYYY")
+    }
+  }
   allStrapiVendor {
     nodes {
       metaDescription
@@ -17,13 +41,27 @@ exports.createPages=async function({graphql,actions}){
       }
       headerTitle
       certification_pages {
-          description1
-          description2
-          faqs {
-            answer
-            question
+        description1
+        description2
+        faqs {
+          answer
+          question
+        }
+        headerTitle
+        logo {
+          localFile {
+            childImageSharp {
+              gatsbyImageData
+            }
           }
-          headerTitle
+        }
+        metaDescription
+        metaTitle
+        logoAltText
+        slug
+        related_courses {
+          slug
+          metaTitle
           logo {
             localFile {
               childImageSharp {
@@ -31,27 +69,21 @@ exports.createPages=async function({graphql,actions}){
               }
             }
           }
-          metaDescription
-          metaTitle
-          logoAltText
-          slug
-          related_courses {
-            slug
-            metaTitle
-            logo {
-              localFile {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-            }
-          }
         }
+      }
     }
   }
 }
 
     `)
+    const blogs = data.allStrapiCbtBlog.nodes;
+    blogs.forEach((d)=>{
+        actions.createPage({
+            path:"/blog/"+d.slug+'/',
+            component: require.resolve(`./src/components/BlogPage/index.tsx`),
+            context:{slug:d.slug,blogs,lang:"en"}
+        })
+    })
     data.allStrapiVendor.nodes.forEach(vendor=>{
         actions.createPage({
             path:"/certifications"+ vendor.slug,

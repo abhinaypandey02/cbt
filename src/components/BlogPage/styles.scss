@@ -1,0 +1,226 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_mixins.scss';
+.blog-container{
+  padding: 50px 320px 30px;
+  @include media-breakpoint-down(md){
+    padding: 0 30px 60px;
+  }
+  .tag{
+    padding: 5px 17px;
+    margin: 14px 0;
+    display: inline-block;
+    color:white;
+    background: #283A61;
+    border-radius: 3px;
+
+  }
+  .title{
+    font-family: Merriweather, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 58px;
+
+    color: #000000;
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+    }
+  }
+  .info{
+    font-family: Merriweather, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 4px 0 18px;
+    /* or 22px */
+
+    color: #515151;
+  }
+  .image{
+    // max-height: 378px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    div{
+      width: 100%;
+    }
+  }
+
+  .author{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px;
+    .dp{
+      height: 42px;
+      width: 42px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .name{
+      font-family: Merriweather, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 160%;
+      margin-left: 14px;
+      /* or 22px */
+
+      color: #000000;
+
+
+    }
+  }
+  .content{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+
+    /* or 32px */
+
+    color: #434343;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 130%;
+      text-align: center;
+    }
+  }
+  .keep-reading{
+    margin: 50px 0 0;
+    .heading{
+      font-family: Merriweather, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 160%;
+
+      /* identical to box height, or 58px */
+      @media (max-width: 768px) {
+         font-size: 28px;
+      }
+      color: #303030;
+    }
+    .blogs{
+      a{
+        text-decoration: none;
+      }
+      .keep-reading-blog{
+        display: flex;
+        @include media-breakpoint-down(md){
+          flex-wrap: wrap;
+        }
+        margin: 30px 0 0;
+        .image{
+          width: 250px;
+          height: 166px;
+          overflow: hidden;
+          flex-shrink: 0;
+          filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.5));
+          border-radius: 5px;
+          margin-right: 34px;
+          div{
+            width: 100%;
+            height: 100%;
+          }
+          @include media-breakpoint-down(md){
+            margin: 0;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: none;
+          }
+        }
+        .content{
+          .heading{
+            font-family: Merriweather, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 160%;
+            margin-bottom: 8px;
+
+            /* or 38px */
+
+            color: #303030;
+            @include media-breakpoint-down(md){
+              margin: 25px 0 10px;
+              font-size: 20px;
+
+            }
+          }
+          .desc{
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 160%;
+
+            /* or 29px */
+            @media (max-width: 768px) {
+               font-size: 16px;
+            }
+            color: #4F4F4F;
+
+
+          }
+        }
+      }
+    }
+  }
+  .about-author{
+    display: flex;
+    background: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    align-items: center;
+    padding: 50px 35px;
+    margin: 50px 0 0;
+    @include media-breakpoint-down(md){
+      padding: 20px 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    .dp{
+      height: 150px;
+      width: 150px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      margin-right: 28px;
+      overflow: hidden;
+      @include media-breakpoint-down(md){
+        margin: 20px;
+      }
+      align-items: center;
+      display: flex;
+    }
+    .content{
+
+      .heading{
+        font-family: Merriweather, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 160%;
+        color: #000000;
+        margin-bottom: 13px;
+      }
+      .about{
+        word-break: break-word;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        color: #000000;
+      }
+    }
+  }
+
+}

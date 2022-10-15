@@ -3,6 +3,19 @@ const strapiConfig = {
     apiURL: "http://35.188.90.216:1337",
     accessToken: "174ba3b6a5137bdcc809d6543f03cbaad5d157dd590fb1d1157d1a69ed901295b7d757a4014ee416e0e1a67c9be6d9a0b7a43b5199cf0c72c05a4a2b1ef2aff95fb8acd2fa853e45fcde3650dd6def7515c4697b371b2cc42c342bf7d7e370ba4c7d7acaae957f2694ec675012dfb9373288ae694a55297fdb18f990d865aef0",
     collectionTypes: [{
+        singularName: 'cbt-blog', queryParams: {
+            populate: {
+                featuredImage:'*',
+                author : {
+                    populate:{
+                        picture:'*'
+                    }
+
+                },
+                faqs:'*'
+            }
+        }
+    },{
         singularName: 'certification-page', queryParams: {
             populate: {
                 logo:'*',
@@ -12,6 +25,13 @@ const strapiConfig = {
                         logo:'*'
                     }
 
+                },
+
+                cbt_blogs:{
+                    populate: {
+                        featuredImage:'*',
+                        faqs:'*'
+                    }
                 },
                 faqs:'*'
             }
