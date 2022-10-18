@@ -1,3 +1,5 @@
+import {Blog} from "./Blog";
+
 export interface CertificationPageInterface {
     faqs:FAQInterface[];
     related_courses:RelatedCourseInterface[];
@@ -12,6 +14,7 @@ export interface CertificationPageInterface {
     metaDescription:string;
     vendorRoute:string;
     vendorTitle:string;
+    blogs:Blog[]
 }
 export interface FAQInterface{
     question:string;

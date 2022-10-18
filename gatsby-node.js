@@ -47,6 +47,9 @@ exports.createPages=async function({graphql,actions}){
           answer
           question
         }
+        certification_pages {
+            slug
+        }
         headerTitle
         logo {
           localFile {
@@ -94,7 +97,7 @@ exports.createPages=async function({graphql,actions}){
             actions.createPage({
                 path:"/certifications"+ vendor.slug+cert.slug,
                 component:require.resolve(`./src/components/CertificationPage/index.tsx`),
-                context:{...cert, vendorTitle:vendor.headerTitle, vendorRoute:"/certifications"+vendor.slug}
+                context:{...cert, vendorTitle:vendor.headerTitle, vendorRoute:"/certifications"+vendor.slug, blogs:blogs.filter(b=>b.certification_pages?.some(c=>c.slug===cert.slug))}
             })
         })
 

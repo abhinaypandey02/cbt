@@ -12,6 +12,7 @@ import GetInTouch from "../GetInTouch";
 import HowItWorks from "../Home/HowItWorks";
 import WhyUs from "../Home/WhyUs";
 import Comparison from "./Comparison";
+import {Blog} from "../../interfaces/Blog";
 
 export default function CertificationPage({location, pageContext}:{location:any,pageContext:CertificationPageInterface}){
     return <Layout location={location}>
@@ -44,7 +45,7 @@ export default function CertificationPage({location, pageContext}:{location:any,
             <RelatedCourse vendorRoute={pageContext.vendorRoute} courses={pageContext.related_courses}/>
             <WhyUs/>
             <GetInTouch location={{pathname:pageContext.slug}} />
-            <BlogsContainer/>
+            <BlogsContainer blogs={pageContext.blogs}/>
         </div>
     </Layout>
 }

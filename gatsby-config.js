@@ -12,6 +12,7 @@ const strapiConfig = {
                     }
 
                 },
+                certification_pages: "*",
                 faqs:'*'
             }
         }
