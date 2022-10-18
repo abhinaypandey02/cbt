@@ -3,7 +3,8 @@ import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
 import {Link} from "gatsby";
 import './styles.scss';
 import {Blog} from "../../interfaces/Blog";
-export default function BlogsContainer({blogs}:{blogs:Blog[]}){
+export default function BlogsContainer({blogs}:{blogs?:Blog[]}){
+    if(!blogs) return null;
     const compiledBlogs=blogs.map(b=>({...b, compiledFeaturedImage:getImage(b.featuredImage.localFile)}))
     if(compiledBlogs.length===0) return null;
     return <div className="blogs">
