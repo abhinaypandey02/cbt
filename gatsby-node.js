@@ -20,6 +20,9 @@ exports.createPages=async function({graphql,actions}){
         }
       }
       tag
+      certification_pages {
+            slug
+       }
       title
       publishedAt(formatString: "MMM DD, YYYY")
       publishedDate(formatString: "MMM DD, YYYY")
@@ -47,9 +50,7 @@ exports.createPages=async function({graphql,actions}){
           answer
           question
         }
-        certification_pages {
-            slug
-        }
+        
         headerTitle
         logo {
           localFile {
