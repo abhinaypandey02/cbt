@@ -10,7 +10,7 @@ export default function BlogsContainer({blogs}:{blogs?:Blog[]}){
     return <div className="blogs">
         <div className="heading">Read Our Latest News</div>
         <div className="elements">
-            {compiledBlogs.slice(0,3).map(blog=><div className="element">
+            {compiledBlogs.map(blog=><div className="element">
                     <div className="image">
                         {blog.compiledFeaturedImage&&<GatsbyImage alt={blog.title} image={blog.compiledFeaturedImage}/>}
                     </div>

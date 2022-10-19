@@ -28,6 +28,7 @@
   }
   @media (max-width: 767.98px) {
      padding: 46px 36px;
+    min-height: initial;
   }
   h1{
     font-family: 'Poppins', sans-serif;
@@ -36,7 +37,10 @@
     font-size: 50px;
     line-height: 75px;
     text-align: center;
-
+    @media (max-width: 768px) {
+       font-size: 30px;
+      line-height: 40px;
+    }
 
   }
   .form-container{
