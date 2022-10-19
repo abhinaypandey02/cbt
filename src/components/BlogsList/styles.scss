@@ -1,0 +1,194 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_mixins.scss';
+.blogsList{
+
+  .heading{
+    font-family: Merriweather, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #000638;
+    margin-top: 30px;
+    @include media-breakpoint-down(md){
+      font-size: 42px;
+
+    }
+  }
+  .desc{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 20px 40px 0;
+    color: #605C59;
+    @include media-breakpoint-down(md){
+      font-size: 18px;
+      margin: 15px 40px 0;
+
+    }
+
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top:70px;
+    gap:40px;
+    padding: 0 30px;
+    @include media-breakpoint-down(sm){
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    }
+    a{
+      text-decoration: none;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .blog{
+      width: 500px;
+      @include media-breakpoint-down(xl){
+        width: 310px;
+
+      }
+      @include media-breakpoint-down(lg){
+        width: 260px;
+
+      }
+      @include media-breakpoint-down(sm){
+        width: 100%;
+
+      }
+      @include media-breakpoint-down(md){
+        padding: 0 20px;
+
+      }
+      .image{
+        width: 100%;
+        max-height: 278px;
+        overflow: hidden;
+
+      }
+      .tag{
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: rgba(255, 255, 255, 0.85);
+        display: inline-block;
+        margin:20px 2px 0;
+        padding: 5px 17px;
+        background: #283A61;
+        border-radius: 3px;
+      }
+      .title{
+        font-family: Merriweather, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 140%;
+        margin: 8px 0 4px;
+        /* or 34px */
+
+        color: #000000;
+      }
+      .date{
+        font-family: Merriweather, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+
+        /* or 22px */
+
+        color: #515151;
+      }
+      .content{
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        margin: 15px 0;
+        /* or 26px */
+
+        color: #434343;
+
+
+      }
+      .author{
+        display: flex;
+        align-items: center;
+        .dp{
+          width: 42px;
+          height:42px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .name{
+          font-family: Merriweather, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 160%;
+          margin: 14px;
+          /* or 22px */
+
+          color: #000000;
+        }
+      }
+
+    }
+  }
+  .pagination{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 160%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .marginForPage{
+      padding: 43px 9px;
+    }
+    a{
+      cursor: default;
+      text-decoration: none;
+    }
+    .pageNumber{
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      width: 42px;
+      border-radius: 50%;
+
+      background: #F5F5F5;
+      font-weight: bold;
+      font-size: 16px;
+      color: #605C59;
+      &-active{
+        @extend .pageNumber;
+        background: #000638;
+        color:white;
+        cursor: default;
+      }
+    }
+    .more{
+      margin: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      width: 42px;
+      font-size: 24px;
+      color: #686461;
+    }
+  }
+}

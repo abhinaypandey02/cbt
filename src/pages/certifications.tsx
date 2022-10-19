@@ -11,7 +11,7 @@ import React from 'react';
 export default function Certifications({location}:{location:any}){
     return <Layout location={location}>
         <div className="certifications">
-            <PageHeader heading={"Certifications"}/>
+            <PageHeader heading={"Certifications"} location={location}/>
             <Navigator pathIDs={['home','certifications']}/>
             <InfoCertifications/>
             <ChooseCertification/>

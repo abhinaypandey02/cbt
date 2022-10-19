@@ -88,6 +88,11 @@ exports.createPages=async function({graphql,actions}){
             context:{slug:d.slug,blogs,lang:"en"}
         })
     })
+    actions.createPage({
+        path:"/blogs",
+        component:require.resolve(`./src/components/BlogsList/index.tsx`),
+        context: {blogs}
+    })
     data.allStrapiVendor.nodes.forEach(vendor=>{
         actions.createPage({
             path:"/certifications"+ vendor.slug,
