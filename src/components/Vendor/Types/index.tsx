@@ -28,7 +28,7 @@ const TYPES=[
 ]
 
 export default function TypesVendor(props:{certifications:{metaTitle:string,metaDescription:string,logo:any,route:string}[]}){
-    const CERTS=props.certifications.map(c=>({...c,compiledLogo:getImage(c.logo.localFile)}))
+    const CERTS=props.certifications.map(c=>({...c,compiledLogo:getImage(c.logo?.localFile)}))
     return <div className="types-pmi">
         {CERTS.map(t=><div className="type">
             <div className="heading">
