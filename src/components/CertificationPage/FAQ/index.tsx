@@ -18,7 +18,7 @@ export default function FAQ({faqs}:{faqs:FAQInterface[]}){
             F.A.Q.
         </div>
         <Accordion defaultActiveKey="0">
-            {[...defaultFAQ,...faqs].map((faq,index)=><Accordion.Item eventKey={index.toString()}>
+            {[...defaultFAQ,...(faqs||[])].map((faq,index)=><Accordion.Item eventKey={index.toString()}>
                 <Accordion.Header>{faq.question}</Accordion.Header>
                 <Accordion.Body>
                     {faq.answer}
