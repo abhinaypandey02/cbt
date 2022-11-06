@@ -11,6 +11,7 @@ function Logo({course, vendorRoute}:any){
 }
 
 export default function RelatedCourse({courses, vendorRoute}: { courses: RelatedCourseInterface[], vendorRoute:string }) {
+    if(!courses) return null;
     const compiledCourses = courses.map(c => ({...c, compiledImage: getImage(c.logo?.localFile)}));
     return <div className="related-course">
         <div className="heading">
