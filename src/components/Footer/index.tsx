@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import {StaticImage} from "gatsby-plugin-image";
+import {Link} from "gatsby";
 
 export default function Footer(){
     return <div className="footer">
@@ -16,7 +17,7 @@ export default function Footer(){
         <div className="certification">
             <div className="heading">Certifications</div>
             <div className="elements">
-                <div className="element">AWS SAA-C02</div>
+                <div className="element">AWS SAA-C03</div>
                 <div className="element">PMI PMP</div>
                 <div className="element">CISCO CCNA</div>
                 <div className="element">compTIA Security+</div>
@@ -27,12 +28,12 @@ export default function Footer(){
         <div className="community">
             <div className="heading">Community</div>
             <div className="elements">
-                <div className="element">Our Certifications</div>
-                <div className="element">Rack Rental</div>
-                <div className="element">Contact Us</div>
-                <div className="element">Privacy Policy</div>
-                <div className="element">Terms & Conditions</div>
-                <div className="element">Refund & Cancelletion</div>
+                <Link to={'/certifications'} className="element">Our Certifications</Link>
+                <Link to={'/rack-rental'} className="element">Rack Rental</Link>
+                <Link to={'/contact-us'} className="element">Contact Us</Link>
+                <Link to={'/privacy-policy'} className="element">Privacy Policy</Link>
+                <Link to={'/terms-and-conditions'} className="element">Terms & Conditions</Link>
+                <Link to={'/refund-policy'} className="element">Refund & Cancelletion</Link>
             </div>
         </div>
         <div className="contactSocial">
