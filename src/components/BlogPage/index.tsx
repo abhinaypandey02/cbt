@@ -38,8 +38,9 @@ export default function BlogPage({pageContext}: any) {
 
     }
     blog.compiledFeaturedImage = getImage(blog.featuredImage.localFile);
-    return <Layout location={'/blog/'+blog.slug}>
+    return <Layout showStickyHeader={true} location={'/blog/'+blog.slug}>
         {/*<SEO blog={true} title={blog.title+" | GED TEST ONLINE"} description={blog.description} schema={blog.schema}/>*/}
+
         <div className="blog-container">
             <div className="tag">{blog.tag}</div>
             <h1 className="title">{blog.title}</h1>

@@ -1,5 +1,6 @@
 @import '../../scss/_variables.scss';
 @import '../../scss/_mixins.scss';
+
 .blog-container{
   padding: 50px 320px 30px;
   @include media-breakpoint-down(md){

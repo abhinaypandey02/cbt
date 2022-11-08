@@ -1,9 +1,39 @@
 
 @import '../../scss/_variables.scss';
 @import '../../scss/_mixins.scss';
+.notif{
+  position: sticky;
+  top:0;
+  z-index: 100;
+  width: 100%;
+  background: black;
+  padding: 27px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 45px;
+
+  color: #FFFFFF;
+  a{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 45px;
+
+    color: #FFFFFF;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+}
 .layout{
   padding:0 80px;
-
+  position: relative;
   @include media-breakpoint-down(md) {
     padding: 0;
   }
