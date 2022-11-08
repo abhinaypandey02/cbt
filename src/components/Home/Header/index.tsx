@@ -22,14 +22,14 @@ export default function Header(){
                         WhatsApp Now
                     </div>
                 </div>
-                <div className="secondary">
+                <a href={'https://www.youtube.com/watch?v=3P3gH-eYs7g'} target={'_blank'} className="secondary">
                     <div className="logo">
                         <StaticImage placeholder="blurred" src={'../../../images/headerButtonPlay.png'} alt={"Header Button Play"}/>
                     </div>
                     <div className="text">
                         Watch Video
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div className="image">

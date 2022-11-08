@@ -10,7 +10,7 @@ export default function SimplifiedScheduling(){
         <div className="content">
             <div className="heading">SIMPLIFIED SCHEDULING</div>
             <div className="desc">To schedule your CCIE rack rental sessions, log in to your Members account on Booking Portal and, click book slot, and select the track & timezone for which you want to book a session. Select all the sessions you want, and then click Schedule Labs. It’s that easy! Our advanced scheduling system will schedule all your consecutive sessions on the same rack if they are available. You are also provided with tools that let you cancel or reschedule your rack sessions without having to contact Customer Support.</div>
-            <button className="watch-video"><StaticImage placeholder="blurred" src={'../../../images/rackRental/play.png'} alt={"Play"}/> Watch Video</button>
+            <a href={'https://www.youtube.com/watch?v=3P3gH-eYs7g'} target={'_blank'} className="watch-video"><StaticImage placeholder="blurred" src={'../../../images/rackRental/play.png'} alt={"Play"}/> Watch Video</a>
         </div>
     </div>
 }
