@@ -84,6 +84,8 @@
       .primary{
         margin-right: 26px;
         background: #0A9E62;
+        text-decoration: none;
+
         @include media-breakpoint-down(md) {
           margin-right: 11px;
         }

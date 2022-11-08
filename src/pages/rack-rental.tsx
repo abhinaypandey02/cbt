@@ -16,7 +16,7 @@ import './styles.scss';
 export default function RackRental({location}:any){
     return <Layout location={location}>
         <div className="rack-rental">
-            <PageHeader location={location} heading={"Rack Rental"}/>
+            <PageHeader location={location} heading={"CCIE Security Rack Rental - CBTPROXY"}/>
             <Navigator pathIDs={['home','rackRental']}/>
             <AboutRackRental location={location}/>
             <HowToUse/>

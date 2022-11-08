@@ -83,7 +83,7 @@ exports.createPages=async function({graphql,actions}){
     const blogs = data.allStrapiCbtBlog.nodes;
     blogs.forEach((d)=>{
         actions.createPage({
-            path:"/blog/"+d.slug+'/',
+            path:"/blogs/"+d.slug+'/',
             component: require.resolve(`./src/components/BlogPage/index.tsx`),
             context:{slug:d.slug,blogs,lang:"en"}
         })

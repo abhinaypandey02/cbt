@@ -6,7 +6,7 @@ import Floating from "../Floating";
 export default function Layout({children,location, className, showStickyHeader}:any){
     return <div className={""+className}>
         {showStickyHeader&&<div id="notif" className="notif">
-            Pass Any Exam Online Now & Pay After Passing Exam. <a href="https://wa.me/13474801260" target="_blank">Contact Now</a>
+            Pass Any Exam Online Now & Pay After Passing Exam. <a href="https://wa.me/14158306004" target="_blank">Contact Now</a>
         </div>}
         <div className={'layout'}>
             <Floating/>

@@ -148,18 +148,23 @@
         }
         .icons{
           display: flex;
+          align-items: center;
           .icon{
             margin: 0 15px;
             @media (max-width: 991.98px) {
                 width: 13px;
               margin: 0 4.5px;
+
             }
           }
-          .icon:nth-child(1){
-            width: 6.5px;
+          @media (max-width: 768px) {
+            .icon:nth-child(1){
+              width: 6.5px;
 
-            margin-left: 0;
+              margin-left: 0;
+            }
           }
+
         }
       }
     }

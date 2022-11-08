@@ -32,6 +32,20 @@ export default function Info(){
                         +1 (415) 830-6004
                     </div>
                 </div>
+                <div className="contact-info" style={{alignItems:'start'}}>
+                    {/*<div className="logo">*/}
+                    {/*    <StaticImage placeholder="blurred" src={'../../../images/phone.png'} alt={"phone"}/>*/}
+                    {/*</div>*/}
+                    <div className="title">
+                        Address:&nbsp;
+                    </div>
+                    <div className="text">
+                        CBTPROXY, 85 Great Portland Street<br/>
+                        First Floor<br/>
+                        London<br/>
+                        W1W 7LT
+                    </div>
+                </div>
             </div>
         </div>
         <div className="image">

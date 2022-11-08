@@ -17,12 +17,12 @@ export default function Header(){
                 Learn to Relax!
             </div>
             <div className="buttons">
-                <div className="primary">
+                <a href={'https://wa.me/14158306004'} target={'_blank'} className="primary">
                     <div className="text">
                         WhatsApp Now
                     </div>
-                </div>
-                <a href={'https://www.youtube.com/watch?v=3P3gH-eYs7g'} target={'_blank'} className="secondary">
+                </a>
+                <a href={'https://www.youtube.com/watch?v=vW54snNKXLc'} target={'_blank'} className="secondary">
                     <div className="logo">
                         <StaticImage placeholder="blurred" src={'../../../images/headerButtonPlay.png'} alt={"Header Button Play"}/>
                     </div>

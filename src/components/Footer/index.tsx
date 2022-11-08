@@ -62,10 +62,10 @@ export default function Footer(){
                 <div className="heading">Social Media:
                 </div>
                 <div className="icons">
-                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/fb.png'} alt={"facebook"}/></div>
-                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/linkedin.png'} alt={"linkedin"}/></div>
-                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/telegram.png'} alt={"telegram"}/></div>
-                    <div className="icon"><StaticImage placeholder="blurred" src={'../../images/social/whatsapp.png'} alt={"whatsapp"}/></div>
+                    <a href={'https://www.facebook.com/CBTproxy'} className="icon"><StaticImage placeholder="blurred" src={'../../images/social/fb.png'} alt={"facebook"}/></a>
+                    <a href={'https://www.linkedin.com/company/cbtproxy'} className="icon"><StaticImage placeholder="blurred" src={'../../images/social/linkedin.png'} alt={"linkedin"}/></a>
+                    <a href={'https://wa.me/14158306004'} className="icon"><StaticImage placeholder="blurred" src={'../../images/social/telegram.png'} alt={"telegram"}/></a>
+                    <a href={'https://t.me/cbtproxy'} className="icon"><StaticImage placeholder="blurred" src={'../../images/social/whatsapp.png'} alt={"whatsapp"}/></a>
                 </div>
             </div>
         </div>

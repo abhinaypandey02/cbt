@@ -9,7 +9,7 @@ import React from 'react';
 export default function ContactUs({location}:{location:any}){
     return <Layout location={location}>
         <div className="contact-us">
-            <PageHeader heading={"Contact Us"}/>
+            <PageHeader location={location} heading={"Contact Us - CBTPROXY"}/>
             <Navigator pathIDs={['home','contactUs']}/>
             <Info/>
             <GetInTouch  location={location}/>

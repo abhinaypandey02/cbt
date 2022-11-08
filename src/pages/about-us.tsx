@@ -12,9 +12,8 @@ import './styles.scss';
 export default function AboutUs({location}:any) {
     return  <Layout location={location}>
         <div className="about-us">
-            <PageHeader heading={"About Us"}/>
+            <PageHeader heading={"About Us - CBTPROXY"} location={location}/>
             <Navigator pathIDs={['home','aboutUs']}/>
-
             <AboutCBT/>
             <WhyUsAbout/>
             <OurStrength/>
