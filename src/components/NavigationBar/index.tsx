@@ -27,6 +27,11 @@ const navLinks=[
         route:"/certifications"
     },
     {
+        name:"Blogs",
+        id:"blogs",
+        route:"/blogs"
+    },
+    {
         name:"Contact",
         id:"contactUs",
         route:"/contact-us"
