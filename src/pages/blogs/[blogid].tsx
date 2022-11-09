@@ -4,11 +4,12 @@ type PROPS_STYLE={
 
 }
 
-export default function Blogid(props:PROPS_STYLE){
+export default function Blogid(props:any){
     useEffect(()=>{
-        console.log(props)
+        console.log(props.params.blogid)
+        navigate('/blog/'+props.params.blogid)
     },[])
     return <div className={''}>
-        Redirecting to ""
+        Redirecting to /blog/{props.params.blogid}
     </div>
 }
