@@ -82,5 +82,5 @@ module.exports = {
         }, __key: "pages"
     }, {
         resolve: 'gatsby-source-strapi', options: strapiConfig
-    }],
+    },'gatsby-plugin-client-side-redirect'],
 };

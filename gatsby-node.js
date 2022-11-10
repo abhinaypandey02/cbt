@@ -1,8 +1,28 @@
 exports.createPages=async function({graphql,actions}){
 
     actions.createRedirect({
-        fromPath: `/docs`,
-        toPath: `/`,
+        fromPath: `/certifications/cisco/ccna/`,
+        toPath: `/certifications/cisco/ccna-200-301/`,
+        statusCode: 200,
+    })
+    actions.createRedirect({
+        fromPath: `/certifications/itil/itil4-strategic-leader/`,
+        toPath: `/certifications/itil/itil-4-leader-digital-and-it-strategy`,
+        statusCode: 200,
+    })
+    actions.createRedirect({
+        fromPath: `/certifications/itil/itil-4-managing-professional/`,
+        toPath: `/certifications/itil/itil-4-managing-professional-transition`,
+        statusCode: 200,
+    })
+    actions.createRedirect({
+        fromPath: `/certifications/p3o-certifications/axelos-certified-p30-foundation/`,
+        toPath: `/certifications/axelos-peoplecert/p30-foundation`,
+        statusCode: 200,
+    })
+    actions.createRedirect({
+        fromPath: `/certifications/p3o-certifications/axelos-certified-p30-practitioner/`,
+        toPath: `/certifications/axelos-peoplecert/p30-practitioner`,
         statusCode: 200,
     })
 
