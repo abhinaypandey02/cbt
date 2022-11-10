@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import {StaticImage} from "gatsby-plugin-image";
+import {Link} from "gatsby";
 
 const FEATURES=[
     {
@@ -16,10 +17,32 @@ const FEATURES=[
     {
         heading:"Get certified from now",
         text:"We have a vast pool of dedicated subject matter experts to help you pass the examination in the first go only. Our system is entirely transparent, and we follow a straightforward approach from registration to appearing for the final exam. So choose your field now and get a certificate that will help your current career.",
-        image:<StaticImage placeholder="blurred" src={'../../../images/features/3.png'} alt={"Feature 3"}/>
+        image:<Vendors/>
     }
 ]
 
+function Vendors(){
+    return <div className={'vendors-list'}>
+
+
+        <Link to={'/certifications/aws/aws-solutions-architect-associate'}>
+            <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/3.png'} alt={"Feature 3"}/>
+        </Link>
+        <Link to={'/certifications/pmi/pass-pmp-certification-exam-dump'}>
+            <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/4.png'} alt={"Feature 3"}/>
+        </Link>
+
+        <Link to={'/certifications/cisco/ccna-200-301'}>
+            <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/2.png'} alt={"Feature 3"}/>
+        </Link>
+        <Link to={'/certifications/comptia/comptia-security-plus'}>
+            <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/5.png'} alt={"Feature 3"}/>
+        </Link>
+        <Link to={'/certifications/isaca/pass-cism-exam-without-dumps'}>
+            <StaticImage placeholder="blurred" src={'../../../images/pmp/relatedCourse/1.png'} alt={"Feature 3"}/>
+        </Link>
+    </div>
+}
 
 export default function Features(){
     return <div className="features">

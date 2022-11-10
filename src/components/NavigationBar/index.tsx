@@ -42,7 +42,7 @@ const PHONE="+1 (415) 830-6004"
 const EMAIL="info@cbtproxy.com"
 export default function NavigationBar({location}:any){
     return <div className="navbar">
-        <Navbar className="navbar-local" bg="white" expand="lg">
+        <Navbar className="navbar-local" bg="white" expand="xl">
             <div className="cont">
                 <Navbar.Brand as={Link} to="/" className={'icon'}><StaticImage placeholder="blurred" src={'../../images/navIcon.png'} alt={"Company logo"}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

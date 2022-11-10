@@ -26,7 +26,7 @@ export default function Index({location,pageContext}:{location:any,pageContext:a
                     id:pageContext.slug
                 }
             ]}/>
-            <InfoVendor logo={pageContext.logo} title={pageContext.pageTitle} description={pageContext.metaDescription}/>
+            <InfoVendor logo={pageContext.logo} title={pageContext.pageTitle} description={pageContext.pageDescription}/>
             <TypesVendor certifications={pageContext.certification_pages.map((c:any)=>({
                 ...c,
                 route:location.pathname+c.slug

@@ -33,9 +33,9 @@ export default function Info(){
                     </div>
                 </div>
                 <div className="contact-info" style={{alignItems:'start'}}>
-                    {/*<div className="logo">*/}
-                    {/*    <StaticImage placeholder="blurred" src={'../../../images/phone.png'} alt={"phone"}/>*/}
-                    {/*</div>*/}
+                    <div className="logo">
+                        <StaticImage width={20} placeholder="blurred" src={'https://img.icons8.com/ios/100/3E7963/marker--v1.png'} alt={"phone"}/>
+                    </div>
                     <div className="title">
                         Address:&nbsp;
                     </div>

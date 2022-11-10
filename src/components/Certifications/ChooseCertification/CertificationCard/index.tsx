@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import {GROUP1} from "../index";
+import {Link} from "gatsby";
 
 export default function CertificationCard({data, color, ROUND_TICK,TICK,ARROW}:{data:typeof GROUP1[0],color:string,ROUND_TICK:any,TICK:any,ARROW:any}){
     return <div className="certification-card">
@@ -14,10 +15,10 @@ export default function CertificationCard({data, color, ROUND_TICK,TICK,ARROW}:{
                 <div className="desc">
                     {data.desc}
                 </div>
-                <div className="see-more">
+                <Link to={data.link} className="see-more">
                     <div className="text" style={{color}}>See More</div>
                     <div className="image">{ARROW}</div>
-                </div>
+                </Link>
             </div>
 
         </div>
@@ -33,9 +34,9 @@ export default function CertificationCard({data, color, ROUND_TICK,TICK,ARROW}:{
                     <div className="desc">
                         {e.desc}
                     </div>
-                    <div className="see-more">
+                    <Link to={e.link} className="see-more">
                         <div className="image">{ARROW}</div>
-                    </div>
+                    </Link>
                 </div>
             </div>)}
         </div>

@@ -86,3 +86,13 @@
   }
 
 }
+.vendors-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .gatsby-image-wrapper{
+    width: 150px !important;
+    height: 150px !important;
+  }
+}

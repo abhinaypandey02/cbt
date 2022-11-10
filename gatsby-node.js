@@ -1,4 +1,11 @@
 exports.createPages=async function({graphql,actions}){
+
+    actions.createRedirect({
+        fromPath: `/docs`,
+        toPath: `/`,
+        statusCode: 200,
+    })
+
     const {data}=await graphql(`
         query {
   allStrapiCbtBlog {
