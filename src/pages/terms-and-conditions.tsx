@@ -1,12 +1,15 @@
 import React from 'react';
 import Layout from "../components/Layout";
 import './styles.scss'
+import SEO from "../components/SEO";
 type PROPS_STYLE={
     location:any
 }
 
 export default function TermsAndConditions(props:PROPS_STYLE){
     return <Layout location={props.location}>
+        <SEO title={"Terms And Conditions"} description={"Terms And Conditions"} blog={false}/>
+
         <div  className={'policy-page'}>
             <h1>Agreement Between User and CBTproxy.com</h1>
             The CBTproxy.com website is comprised of various web pages operated by CBTproxy. CBTproxy is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein. Your use of CBTproxy.com constitutes your agreement to all such terms. Please read these terms carefully, and keep a copy of them for reference.

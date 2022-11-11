@@ -13,9 +13,12 @@ import HowItWorks from "../Home/HowItWorks";
 import WhyUs from "../Home/WhyUs";
 import Comparison from "./Comparison";
 import {Blog} from "../../interfaces/Blog";
+import SEO from "../SEO";
 
 export default function CertificationPage({location, pageContext}:{location:any,pageContext:CertificationPageInterface}){
     return <Layout location={location}>
+        <SEO blog={false} title={pageContext.metaTitle} description={pageContext.metaDescription} schema={pageContext.schema}/>
+
         <div className="pmp">
             <PageHeader miniForm={true} location={'/certification'+pageContext.slug} heading={pageContext.headerTitle+" Online From Home & Pay After You Pass"}/>
             <Navigator pathData={[

@@ -3,7 +3,7 @@ import './styles.scss';
 import Layout from "../Layout";
 import {Link, navigate} from "gatsby";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
-// import SEO from "../SEO";
+import SEO from "../SEO";
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import gfm from 'remark-gfm';
@@ -39,7 +39,7 @@ export default function BlogPage({pageContext}: any) {
     }
     blog.compiledFeaturedImage = getImage(blog.featuredImage.localFile);
     return <Layout showStickyHeader={true} location={'/blog/'+blog.slug}>
-        {/*<SEO blog={true} title={blog.title+" | GED TEST ONLINE"} description={blog.description} schema={blog.schema}/>*/}
+        <SEO blog={true} title={blog.title} description={blog.description} schema={blog.schema}/>
 
         <div className="blog-container">
             <div className="tag">{blog.tag}</div>

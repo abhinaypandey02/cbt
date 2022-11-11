@@ -7,8 +7,11 @@ import PageHeader from "../PageHeader";
 import React from 'react';
 import TypesVendor from "./Types";
 import '../../pages/styles.scss'
+import SEO from "../SEO";
 export default function Index({location,pageContext}:{location:any,pageContext:any}){
     return <Layout location={location}>
+        <SEO blog={false} title={pageContext.metaTitle} description={pageContext.metaDescription} schema={pageContext.schema}/>
+
         <div className="vendor">
             <PageHeader heading={pageContext.headerTitle} location={location}/>
             <Navigator pathData={[

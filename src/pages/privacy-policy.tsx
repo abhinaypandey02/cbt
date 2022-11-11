@@ -1,12 +1,15 @@
 import React from 'react';
 import Layout from "../components/Layout";
 import './styles.scss'
+import SEO from "../components/SEO";
 type PROPS_STYLE={
     location:any
 }
 
 export default function PrivacyPolicy(props:PROPS_STYLE){
     return <Layout location={props.location}>
+        <SEO title={"Privacy Policy"} description={"Privacy Policy"} blog={false}/>
+
         <div  className={'policy-page'}>
 
             <h1>Privacy Policy</h1>

@@ -8,10 +8,13 @@ import React from "react"
 import WhoCanDemand from "../components/Home/WhoCanDemand";
 import WhyUs from "../components/Home/WhyUs";
 import './styles.scss';
+import SEO from "../components/SEO";
 // markup
 const IndexPage = ({location}: any) => {
     return (<Layout location={location}>
-            <Header/>
+        <SEO title={"Pass IT Certifications With 100% Guarantee & Pay After Pass | Home | CBTPROXY"} description={"We will help you in passing the Cisco, PMI, ISACA, CompTIA & many more examinations without wasting your money, time, and other valuable resources."} blog={false}/>
+
+        <Header/>
             <Companies/>
         <Features/>
         <WhyUs/>
