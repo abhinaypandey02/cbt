@@ -93,6 +93,9 @@ exports.createPages=async function({graphql,actions}){
         related_courses {
           slug
           metaTitle
+          vendor{
+            slug
+          }
           logo {
             localFile {
               childImageSharp {

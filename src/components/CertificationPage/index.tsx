@@ -45,7 +45,7 @@ export default function CertificationPage({location, pageContext}:{location:any,
 
             <FAQ faqs={pageContext.faqs}/>
             <Comparison/>
-            <RelatedCourse vendorRoute={pageContext.vendorRoute} courses={pageContext.related_courses}/>
+            {pageContext.related_courses.length>0&&<RelatedCourse vendorRoute={pageContext.vendorRoute} courses={pageContext.related_courses}/>}
             <WhyUs/>
             <GetInTouch location={{pathname:pageContext.slug}} />
             <BlogsContainer blogs={pageContext.blogs}/>

@@ -5,7 +5,7 @@ import {RelatedCourseInterface} from "../../../interfaces/CertificationPageInter
 import {Link} from "gatsby";
 
 function Logo({course, vendorRoute}:any){
-    return <Link to={vendorRoute+course.slug}>
+    return <Link to={course.vendor?.slug+course.slug}>
         <GatsbyImage image={course.compiledImage} alt={course.metaTitle}/>
     </Link>
 }

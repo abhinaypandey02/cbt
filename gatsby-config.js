@@ -21,6 +21,7 @@ const strapiConfig = {
             populate: {
                 logo:'*',
                 image:'*',
+                vendor:'*',
                 related_courses : {
                     populate:{
                         logo:'*'
