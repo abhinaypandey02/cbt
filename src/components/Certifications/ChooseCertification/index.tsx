@@ -21,7 +21,7 @@ export const GROUP1 = [
             {
                 title: "PMP",
                 desc: "Pass PMP Certifications Online From Home without relying on PMP Dumps with PMP Proxy Exam if fail get Our Fee + Exam Fee Refunded. PAY AFTER YOU PASS.",
-                link: "/certifications/pmi/pmp",
+                link: "/certifications/pmi/pass-pmp-certification-exam-dump",
             },
             {
                 title: "PMI-ACP",

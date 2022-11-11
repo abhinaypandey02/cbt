@@ -18,7 +18,7 @@ export default function Footer(){
             <div className="heading">Certifications</div>
             <div className="elements">
                 <Link to={'/certifications/aws/aws-solutions-architect-associate'} className="element">AWS SAA-C03</Link>
-                <Link to={'/pmi/pass-pmp-certification-exam-dump'} className="element">PMI PMP</Link>
+                <Link to={'/certifications/pmi/pass-pmp-certification-exam-dump'} className="element">PMI PMP</Link>
                 <Link to={'/certifications/cisco/ccna-200-301'} className="element">CISCO CCNA</Link>
                 <Link to={'/certifications/comptia/comptia-security-plus'} className="element">compTIA Security+</Link>
                 <Link to={'/certifications/isaca/pass-cism-exam-without-dumps'} className="element">ISACA CISM</Link>

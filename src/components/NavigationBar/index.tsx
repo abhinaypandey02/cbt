@@ -19,7 +19,7 @@ const navLinks=[
     {
         name:"Rack Rental",
         id:"rackRental",
-        route:"/rack-rental"
+        route:"/rack-rentals"
     },
     {
         name:"Certifications",
