@@ -64,7 +64,7 @@ const strapiConfig = {
 };
 module.exports = {
     pathPrefix: "/cbt", siteMetadata: {
-        title: `new`, siteUrl: `https://www.yourdomain.tld`
+        title: `new`, siteUrl: `https://cbtproxy.com`
     }, plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
         resolve: 'gatsby-plugin-manifest', options: {
             "icon": "src/images/icon.png"
