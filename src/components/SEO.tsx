@@ -14,17 +14,7 @@ export default function SEO(props: { title?: string, description?: string, blog:
         description: props.description || defaultDescription,
         url: `${siteUrl}${pathname}`,
     }
-    let schema={
-        "@context" : "http://schema.org",
-        "@type" : "Product",
-        "name" : "GED TEST ONLINE",
-        "description" : "We Help You To Pass the Online GED Test on the first attempt without any stress. If Fail free Exam Retake & Extended Support definitely Pay After Pass",
-        "url" : "https://gedtestonline.us/",
-        "brand" : {
-            "@type" : "Brand",
-            "name" : "GED Test Online"
-        }
-    }
+    let schema=null
     if(props.schema){
         try{
             schema=JSON.parse(props.schema);
@@ -48,7 +38,7 @@ export default function SEO(props: { title?: string, description?: string, blog:
         <meta name="language" content="English"/>
         <meta name="revisit-after" content="7 days"/>
         <meta charSet="UTF-8"/>
-        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+        {schema&&<script type="application/ld+json">{JSON.stringify(schema)}</script>}
     </Helmet>
 }
 const query = graphql`
