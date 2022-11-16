@@ -2,8 +2,9 @@ import React from "react";
 import {graphql, useStaticQuery} from "gatsby";
 import {Helmet} from "react-helmet"
 import {useLocation} from "@reach/router"
+import {Blog} from "../interfaces/Blog";
 
-export default function SEO(props: { title?: string, description?: string, blog: boolean, schema?:any }) {
+export default function SEO(props: { title?: string, description?: string, blog: boolean, schema?:any, blogValue?:Blog }) {
     const {pathname} = useLocation()
     const {site} = useStaticQuery(query);
     const {
@@ -14,7 +15,26 @@ export default function SEO(props: { title?: string, description?: string, blog:
         description: props.description || defaultDescription,
         url: `${siteUrl}${pathname}`,
     }
-    let schema=null
+    let schema=null;
+    if(props.blogValue){
+        schema={
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "name": props.blogValue.title,
+            "description": props.blogValue.description,
+            "author": {
+                "@type": "Person",
+                "name": "CBT Proxy"
+            },
+            "datePublished": props.blogValue.publishedDate,
+            "articleBody": props.blogValue.description,
+            "url": seo.url,
+            "publisher": {
+                "@type": "Organization",
+                "name": "CBT Proxy"
+            }
+        }
+    }
     if(props.schema){
         try{
             schema=JSON.parse(props.schema);

@@ -46,7 +46,7 @@ export default function NavigationBar({location}:any){
             <div className="cont">
                 <Navbar.Brand as={Link} to="/" className={'icon'}><StaticImage placeholder="blurred" src={'../../images/navIcon.png'} alt={"Company logo"}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className="menu-collapse">
+                <Navbar.Collapse id={'basic-navbar-nav'} className="menu-collapse">
                     <Nav className="menu">
                         {navLinks.map(item=><Nav.Link as={Link} to={item.route} className={"menuItem "+(location.pathname===item.route?"menuItem--active":"")}>
                             {item.name}
